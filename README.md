@@ -1,1 +1,0 @@
-# arkadiuszkornecki.github.io
