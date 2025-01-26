@@ -70,16 +70,17 @@ body {
 }
 
 .burger.active > span {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .burger.active > span:nth-child(1) {
     transform: translateY(1rem) rotate(-44deg);
-    width: 80%;
+    width: 100%;
 }
 
 .burger.active > span:nth-child(2) {
-    transform: translateY(-0.5rem) rotate(44deg);
+    transform: translateY(-1.5rem) rotate(44deg);
+    width: 100%;
 }
 
 .burger.active > span:nth-child(3) {
@@ -95,6 +96,7 @@ body {
 }
 
 #menu {
+    display: none;
     height: 1000px;
     position: absolute;
     right: 0;
@@ -140,7 +142,10 @@ body {
 #home {
     display: flex;
     width: 100vw;
-    height: 619px;
+    height: 1500px;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-bg-color);
 }
 
 #img_photo {
@@ -148,109 +153,124 @@ body {
     width: 50%;
     height: 100%;
     align-items: center;
-    justify-content: center;
 }
 
 #img_photo img {
-    width: 427px;
-    height: 427px;
+    width: 550px;
+    height: 550px;
     border-radius: 5%;
+    margin-top: 25%;
 }
 
 #home #about {
     display: flex;
     flex-direction: column;
     height: 100%;
-    width: 50%;
-    justify-content: center;
-    margin-left: 200px;
+    margin-top: 15%;
 }
 
 #home #about * {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .contact_us_home {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 123px;
-    height: 43px;
+    width: 300px;
+    height: 100px;
+    font-size: 30px;
     border-radius: 5px;
     background-color: var(--primary-color);
     font-weight: bold;
-    font-size: 16px;
     cursor: pointer;
 }
 
 #home #about h4 {
     color: var(--primary-color);
+    font-size: 35px;
 }
 
 #home #about h1 {
     color: var(--secondary-color);
-    font-size: 42px;
+    font-size: 67px;
 }
 
 #home #about p {
     color: var(--third-color);
+    font-size: 30px;
 }
+
+
 
 /* ABOUTME [DIV-SECTION] */
 
 #aboutme {
     display: flex;
     width: 100vw;
-    height: 704px;
+    height: 1500px;
     background-color: var(--secondary-bg-color);
+    flex-direction: column;
+    align-items: center;
 }
 
 #aboutme #img {
     display: flex;
-    width: 50%;
+    width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
+    margin-top: 15%;
 }
 
 #image_border img {
     position: relative;
     border-radius: 5%;
     transform:  scaleX(-1);
-    width: 427px;
-    height: 427px;
+    width: 550px;
+    height: 550px;
     left: 25px;
     bottom: 50px;
 }
 
 #aboutme #img #image_border {
     display: flex;
-    border: 15px solid var(--primary-color);
+    border: 20px solid var(--primary-color);
     border-radius: 5%;
-    width: 427px;
-    height: 427px;
+    width: 550px;
+    height: 550px;
 }
 
 #aboutme #description {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     height: 100%;
     justify-content: center;
 }
 
 #aboutme #description * {
-    margin: 25px 0;
+    margin: 25px 100px;
 }
 
 #aboutme #description h1 {
     color: var(--secondary-color);
-    font-size: 42px;
+    font-size: 67px;
+}
+
+#aboutme #description h1 span {
+    margin: 0;
 }
 
 #aboutme #description p {
     color: var(--third-color);
+    font-size: 30px;
 }
+
+#aboutme #description button a {
+    margin: 0;
+}
+
 
 /* SERVICE [DIV SECTION] */
 
