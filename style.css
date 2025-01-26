@@ -629,4 +629,175 @@ body {
     #aboutme #description * {
         margin: 25px 0;
     }
+
+    /* SERVICE */
+
+    #service {
+        flex-direction: column;
+        width: 100vw;
+        height: 704px;
+    }
+
+    #service #service_title {
+        width: 100vw;
+        height: 200px;
+        justify-content: end;
+        align-items: center;
+    }
+
+    #service #service_title h1 {
+        font-size: 42px;
+    }
+
+    #service #service_section {
+        flex-direction: row;
+        width: 100vw;
+        height: 504px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .service_item {
+        flex-direction: column;
+        height: 288px;
+        width: 350px;
+        border-radius: 10px;
+        align-items: center;
+    }
+
+    .service_item * {
+        margin: 15px 0;
+    }
+
+    .service_item i {
+        width: 100%;
+        justify-content: center;
+        font-size: 40px;
+        margin-top: 40px;
+    }
+
+    .service_item h3 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .service_item p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* EXPERIENCES */
+
+    #experiences {
+        flex-direction: column;
+        width: 100vw;
+        height: 536px;
+    }
+
+    #experiences #experiences_title {
+        width: 100vw;
+        height: 200px;
+        align-items: center;
+    }
+
+    #experiences #experiences_title h1 {
+        position: relative;
+        left: 200px;
+        top: 50px;
+        font-size: 42px;
+    }
+
+    #experiences #experiences_section {
+        flex-direction: row;
+        width: 100vw;
+        height: 336px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .experience {
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 302px;
+        height: 158px;
+    }
+
+    .experience h5 {
+        font-weight: 300;
+        font-size: 20px;
+    }
+
+    .experience h1 {
+        font-size: 26px;
+    }
+
+    .experience h6 {
+        font-size: 16px;
+    }
+
+    .experience p {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    /* CONTACT */
+
+    #contact {
+        flex-direction: column;
+        width: 100vw;
+        height: 664px;
+    }
+
+    #contact #contact_title {
+        flex-direction: column;
+        width: 100vw;
+        height: 200px;
+        align-items: center;
+        justify-content: end;
+    }
+
+    #contact #contact_title h1 {
+        font-size: 42px;
+    }
+
+    #contact #contact_section {
+        flex-direction: row;
+        width: 100vw;
+        height: 464px;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .contact_method {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+    }
+
+    .contact_method a {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        border: 5px solid var(--primary-color);
+    }
+
+    .contact_method i {
+        font-size: 100px;
+    }
+
+    /* FOOTER */
+
+    #footer {
+        width: 100vw;
+        height: 136px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footer_items a{
+        font-size: 30px;
+        margin: 5px;
+    }
 }
