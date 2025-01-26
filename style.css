@@ -54,7 +54,7 @@ body {
     cursor: pointer;
     position: relative;
     transition: all 0.3s ease-in-out;
-    left: 500px;
+    left: 50%;
 }
 
 .burger span {
@@ -150,9 +150,10 @@ body {
 
 #img_photo {
     display: flex;
-    width: 50%;
+    width: 100%;
     height: 100%;
     align-items: center;
+    justify-content: center;
 }
 
 #img_photo img {
@@ -193,7 +194,7 @@ body {
 
 #home #about h1 {
     color: var(--secondary-color);
-    font-size: 67px;
+    font-size: 60px;
 }
 
 #home #about p {
@@ -255,7 +256,7 @@ body {
 
 #aboutme #description h1 {
     color: var(--secondary-color);
-    font-size: 67px;
+    font-size: 60px;
 }
 
 #aboutme #description h1 span {
@@ -278,7 +279,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 704px;
+    height: 2000px;
     background-color: var(--primary-bg-color);
 }
 
@@ -294,14 +295,14 @@ body {
 #service #service_title h1 {
     position: relative;
     color: var(--secondary-color);
-    font-size: 42px;
+    font-size: 60px;
 }
 
 #service #service_section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100vw;
-    height: 504px;
+    height: 100%;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -310,34 +311,35 @@ body {
     display: flex;
     flex-direction: column;
     background-color: var(--secondary-bg-color);
-    height: 288px;
-    width: 350px;
-    border-radius: 10px;
+    height: 488px;
+    width: 550px;
+    border-radius: 20px;
     align-items: center;
+    justify-content: center;
 }
 
 .service_item * {
-    margin: 15px 0;
+    margin: 25px 0;
 }
 
 .service_item i {
     display: flex;
     width: 100%;
     justify-content: center;
-    font-size: 40px;
+    font-size: 60px;
     color: var(--primary-color);
     margin-top: 40px;
 }
 
 .service_item h3 {
     color: var(--secondary-color);
-    font-size: 26px;
+    font-size: 40px;
     text-align: center;
 }
 
 .service_item p {
     color: var(--third-color);
-    font-size: 16px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -347,14 +349,14 @@ body {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 536px;
+    height: 1500px;
     background-color: var(--secondary-bg-color);
 }
 
 #experiences #experiences_title {
     display: flex;
     width: 100vw;
-    height: 200px;
+    height: 400px;
     align-items: center;
 }
 
@@ -364,14 +366,14 @@ body {
     top: 50px;
     font-family: var(--secondary-font), serif;
     color: var(--secondary-color);
-    font-size: 42px;
+    font-size: 60px;
 }
 
 #experiences #experiences_section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100vw;
-    height: 336px;
+    height: 100%;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -380,29 +382,30 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 302px;
-    height: 158px;
+    width: 500px;
+    height: 308px;
+
 }
 
 .experience h5 {
     color: var(--secondary-color);
     font-weight: 300;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .experience h1 {
     color: var(--primary-color);
-    font-size: 26px;
+    font-size: 40px;
 }
 
 .experience h6 {
     color: var(--secondary-color);
-    font-size: 16px;
+    font-size: 30px;
 }
 
 .experience p {
     color: var(--third-color);
-    font-size: 16px;
+    font-size: 30px;
     margin-left: 10px;
 }
 
@@ -412,7 +415,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 664px;
+    height: 1500px;
     background-color: var(--primary-bg-color);
 }
 
@@ -420,30 +423,30 @@ body {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 200px;
+    height: 400px;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
 }
 
 #contact #contact_title h1 {
     font-family: var(--primary-font), serif;
     color: var(--secondary-color);
-    font-size: 42px;
+    font-size: 67px;
 }
 
 #contact #contact_section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100vw;
-    height: 464px;
+    height: 100%;
     align-items: center;
     justify-content: space-evenly;
 }
 
 .contact_method {
     display: flex;
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    height: 450px;
     border-radius: 10px;
 }
 
@@ -453,8 +456,8 @@ body {
     height: 100%;
     justify-content: center;
     align-items: center;
-    border: 5px solid var(--primary-color);
-    border-radius: 10px;
+    border: 10px solid var(--primary-color);
+    border-radius: 20px;
     text-decoration: none;
     color: var(--primary-color);
 }
@@ -466,7 +469,7 @@ body {
 
 .contact_method i {
     display: flex;
-    font-size: 100px;
+    font-size: 150px;
 }
 
 /* FOOTER [DIV SECTION] */
@@ -474,7 +477,7 @@ body {
 #footer {
     display: flex;
     width: 100vw;
-    height: 136px;
+    height: 250px;
     background-color: var(--secondary-bg-color);
     align-items: center;
     justify-content: center;
@@ -482,6 +485,6 @@ body {
 
 #footer_items a{
     color: var(--fourth-color);
-    font-size: 30px;
-    margin: 5px;
+    font-size: 60px;
+    margin: 20px;
 }
