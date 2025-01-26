@@ -488,3 +488,145 @@ body {
     font-size: 60px;
     margin: 20px;
 }
+
+@media only screen and (min-width: 1000px) {
+    #nav-bar {
+        height: 62px;
+        width: 100vw;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background-color: var(--secondary-bg-color);
+    }
+
+    #nav-bar img {
+        width: 100px;
+    }
+
+    #nav-bar ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #nav-bar ul li {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 30px;
+    }
+
+    #nav-bar ul li a {
+        font-size: 20px;
+    }
+
+    /* HOME */
+    #home {
+        width: 50%;
+        height: 619px;
+        flex-direction: column;
+    }
+
+    #img_photo {
+        display: flex;
+        width: 50%;
+        height: 634px;
+        position: absolute;
+        right: 0;
+    }
+
+    #img_photo img {
+        width: 427px;
+        height: 427px;
+        border-radius: 5%;
+        margin-top: 0;
+    }
+
+    #home #about {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        margin-left: 500px;
+        margin-top: 0;
+    }
+
+    #home #about * {
+        margin: 10px 0;
+    }
+
+    #home #about h4 {
+        color: var(--primary-color);
+        font-size: 16px;
+    }
+
+    #home #about h1 {
+        color: var(--secondary-color);
+        font-size: 42px;
+    }
+
+    #home #about p {
+        color: var(--third-color);
+        font-size: 16px;
+    }
+
+    .contact_us_home {
+        width: 123px;
+        height: 43px;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    /* ABOUT ME */
+    #aboutme {
+        height: 704px;
+        flex-direction: row;
+    }
+
+    #aboutme #img {
+        width: 50%;
+        height: 100%;
+        margin-top: 0;
+    }
+
+    #image_border img {
+        width: 427px;
+        height: 427px;
+        left: 25px;
+        bottom: 50px;
+    }
+
+    #aboutme #img #image_border {
+        border-radius: 5%;
+        width: 427px;
+        height: 427px;
+    }
+
+    #aboutme #description {
+        width: 50%;
+        height: 100%;
+    }
+
+    #aboutme #description h1 {
+        font-size: 42px;
+    }
+
+    #aboutme #description p {
+        font-size: 20px;
+        width: 65%;
+    }
+
+    #aboutme #description * {
+        margin: 25px 0;
+    }
+}
