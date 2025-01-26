@@ -39,7 +39,11 @@ body {
 
 #nav-bar img {
     width: 200px;
-    margin-left: 100px;
+}
+
+
+#nav-bar a {
+    margin-left: 150px;
 }
 
 .burger {
@@ -497,6 +501,7 @@ body {
         justify-content: space-around;
     }
 
+
     .burger {
         display: none;
     }
@@ -509,6 +514,11 @@ body {
         right: 0;
         top: 0;
         background-color: var(--secondary-bg-color);
+    }
+
+
+    #nav-bar a {
+        margin-left: 0;
     }
 
     #nav-bar img {
