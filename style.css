@@ -489,7 +489,7 @@ body {
     margin: 20px;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1300px) {
     #nav-bar {
         height: 62px;
         width: 100vw;
