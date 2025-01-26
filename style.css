@@ -32,42 +32,93 @@ body {
 #nav-bar {
     display: flex;
     background-color: var(--secondary-bg-color);
-    height: 62px;
+    height: 150px;
     width: 100vw;
     align-items: center;
-    justify-content: space-around;
 }
 
 #nav-bar img {
-    width: 100px;
+    width: 200px;
+    margin-left: 100px;
 }
 
-#nav-bar h2 {
+.burger {
     display: flex;
-    color: var(--secondary-color);
+    width: 5rem;
+    height: 5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    background: transparent;
+    border: none;
+    align-items: flex-end;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    left: 500px;
 }
 
-#nav-bar h2 a {
-    text-decoration: none;
-    color: var(--secondary-color);
+.burger span {
+    width: 100%;
+    height: 0.3rem;
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.burger.active {
+    z-index: 10;
+}
+
+.burger.active > span {
+    background-color: var(--secondary-color);
+}
+
+.burger.active > span:nth-child(1) {
+    transform: translateY(1rem) rotate(-44deg);
+    width: 80%;
+}
+
+.burger.active > span:nth-child(2) {
+    transform: translateY(-0.5rem) rotate(44deg);
+}
+
+.burger.active > span:nth-child(3) {
+    display: none;
+}
+
+.burger span:nth-child(2) {
+    width: 80%;
+}
+
+.burger span:nth-child(3) {
+    width: 60%;
+}
+
+#menu {
+    height: 1000px;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    background-color: var(--secondary-bg-color);
+    border-radius: 50px 0 0 50px;
 }
 
 #nav-bar ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     list-style: none;
 }
 
 #nav-bar ul li {
     display: flex;
-    justify-content: space-evenly;
-    margin: 0 30px;
+    margin: 70px 70px;
 }
 
 #nav-bar ul li a {
     text-decoration: none;
     color: var(--third-color);
+    font-size: 40px;
 }
 
 #nav-bar ul li a:hover {
