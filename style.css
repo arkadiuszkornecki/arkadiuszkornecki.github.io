@@ -125,6 +125,7 @@ body {
     text-decoration: none;
     color: var(--third-color);
     font-size: 40px;
+    margin: 0px;
 }
 
 #nav-bar ul li a:hover {
@@ -542,9 +543,8 @@ body {
 
     /* HOME */
     #home {
-        width: 50%;
         height: 619px;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     #img_photo {
@@ -565,9 +565,9 @@ body {
     #home #about {
         display: flex;
         height: 100%;
-        width: 100%;
+        width: 50%;
         justify-content: center;
-        margin-left: 500px;
+        margin-left: 400px;
         margin-top: 0;
     }
 
@@ -809,5 +809,11 @@ body {
     #footer_items a{
         font-size: 30px;
         margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    #home #about {
+        margin-left: 200px;
     }
 }
