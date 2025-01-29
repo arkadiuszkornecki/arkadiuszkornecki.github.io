@@ -125,7 +125,7 @@ body {
     text-decoration: none;
     color: var(--third-color);
     font-size: 40px;
-    margin: 0px;
+    margin: 0;
 }
 
 #nav-bar ul li a:hover {
