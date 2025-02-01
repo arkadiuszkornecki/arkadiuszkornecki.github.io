@@ -489,7 +489,7 @@ body {
 }
 
 #footer_items a{
-    color: var(--fourth-color);
+    color: var(--third-color);
     font-size: 60px;
     margin: 20px;
 }
