@@ -1,0 +1,34 @@
+{
+  "1": {
+    "tresc" : "Kto napisał Adama Mickiewicza?",
+    "a" : "Pan Tadeusz",
+    "b" : "Juliusz Słowacki",
+    "c": "Adam Czarnecki",
+    "d" : "Test1",
+    "answer" : "a"
+  },
+  "2" : {
+    "tresc" : "Kto napisał Tadeusza Kościuszko?",
+    "a" : "Pan Tadeusz",
+    "b" : "Juliusz Słowacki",
+    "c": "Adam Czarnecki",
+    "d" : "Test2",
+    "answer" : "c"
+  },
+  "3" : {
+    "tresc" : "Kto napisał Tadeusza Marciniaka?",
+    "a" : "Pan Tadeusz",
+    "b" : "Juliusz Słowacki",
+    "c": "Mirosław",
+    "d" : "Test3",
+    "answer" : "c"
+  },
+  "4" : {
+    "tresc" : "Kto napisał Mariana Kościuszko?",
+    "a" : "Pan Tadeusz",
+    "b" : "Elizabetch Braun",
+    "c": "Adam Czarnecki",
+    "d" : "Test4",
+    "answer" : "b"
+  }
+}
