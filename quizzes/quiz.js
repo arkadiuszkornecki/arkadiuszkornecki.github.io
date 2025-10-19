@@ -35,11 +35,28 @@ function loadQuiz(jsonPath) {
         .then(data => {
             quizData = data;
 
-            const questionsArray = Object.keys(data).map(key => ({
-                id: key,
-                ...data[key]
-            }));
-            shuffledQuestions = shuffleArray(questionsArray);
+            const questionsArray = Object.keys(data).map(key => {
+                const question = data[key];
+
+                const answers = [
+                    { key: 'a', text: question.a },
+                    { key: 'b', text: question.b },
+                    { key: 'c', text: question.c },
+                    { key: 'd', text: question.d }
+                ];
+
+                const shuffledAnswers = shuffleArray(answers);
+
+                return {
+                    id: key,
+                    tresc: question.tresc,
+                    answers: shuffledAnswers,
+                    correctAnswer: question.answer
+                };
+            });
+
+            const allShuffled = shuffleArray(questionsArray);
+            shuffledQuestions = allShuffled.slice(0, 20);
 
             currentQuestion = 0;
             score = 0;
@@ -65,18 +82,18 @@ function showQuestion(index) {
     testsContainer.style.flexDirection = "column";
     btn_place.innerHTML = "";
 
-    ["a", "b", "c", "d"].forEach(key => {
+    questionData.answers.forEach(answer => {
         const el = document.createElement("div");
         el.className = "odp";
-        el.setAttribute("data-answer", key);
-        el.textContent = questionData[key];
+        el.setAttribute("data-answer", answer.key);
+        el.textContent = answer.text;
         el.style.marginBottom = "10px";
         el.style.borderRadius = "3px";
 
         el.addEventListener("click", () => {
             document.querySelectorAll(".odp").forEach(d => d.style.border = "none");
             el.style.border = "3px solid var(--primary-color)";
-            selectedAnswer = key;
+            selectedAnswer = answer.key;
         });
 
         testsContainer.appendChild(el);
@@ -88,7 +105,7 @@ function showQuestion(index) {
 
     nextBtn.addEventListener("click", () => {
         userAnswers[questionData.id] = selectedAnswer || null;
-        if (selectedAnswer === questionData.answer) score++;
+        if (selectedAnswer === questionData.correctAnswer) score++;
 
         if (currentQuestion < shuffledQuestions.length - 1) {
             currentQuestion++;
@@ -114,6 +131,7 @@ function showWorkInProgress() {
 
     btn_place.innerHTML = '<button class="btn"><a href="../index.html">Powrót</a></button>';
 }
+
 
 function showSummary() {
     const totalQuestions = shuffledQuestions.length;
@@ -153,6 +171,7 @@ function showSummary() {
 
         shuffledQuestions.forEach((q, index) => {
             const userAns = userAnswers[q.id];
+            const correctAnswerObj = q.answers.find(ans => ans.key === q.correctAnswer);
 
             const qDiv = document.createElement("div");
             qDiv.style.display = "flex";
@@ -166,16 +185,17 @@ function showSummary() {
             questionText.textContent = `${index + 1}. ${q.tresc}`;
             questionText.style.marginBottom = "10px";
 
+            const userAnswerObj = q.answers.find(ans => ans.key === userAns);
             const userAnswerDiv = document.createElement("div");
             userAnswerDiv.className = "final_answer";
-            userAnswerDiv.textContent = `Twoja odpowiedź: ${userAns ? q[userAns] : "Brak odpowiedzi"}`;
-            userAnswerDiv.style.backgroundColor = userAns === q.answer ? "green" : "red";
+            userAnswerDiv.textContent = `Twoja odpowiedź: ${userAnswerObj ? userAnswerObj.text : "Brak odpowiedzi"}`;
+            userAnswerDiv.style.backgroundColor = userAns === q.correctAnswer ? "green" : "red";
             userAnswerDiv.style.color = "white";
             userAnswerDiv.style.marginBottom = "5px";
 
             const correctAnswerDiv = document.createElement("div");
             correctAnswerDiv.className = "final_answer";
-            correctAnswerDiv.textContent = `Poprawna odpowiedź: ${q[q.answer]}`;
+            correctAnswerDiv.textContent = `Poprawna odpowiedź: ${correctAnswerObj.text}`;
             correctAnswerDiv.style.backgroundColor = "green";
             correctAnswerDiv.style.color = "white";
 

@@ -108,7 +108,7 @@
     "a" : "Położenie na styku struktur geologicznych",
     "b" : "Usytuowanie pomiędzy Morzem Bałtyckim a Karpatami i Sudetami",
     "c": "Nie ma takiej cechy",
-    "d" : "Położenie na Niżu Środkowo-europejskim",
+    "d" : "Położenie na niżu środkowo-europejskim",
     "answer" : "d"
   },
   "15" : {
@@ -240,7 +240,7 @@
     "answer" : "d"
   },
   "31" : {
-    "tresc" : "Ile trwał okres czwartorzędu w erze kenozoicznej?[mln lat]",
+    "tresc" : "Ile trwał okres czwartorzędu w erze kenozoicznej? [mln lat]",
     "a" : "2,6 do dziś",
     "b" : "299-252",
     "c": "4600-541",
@@ -324,7 +324,7 @@
     "a" : "Nizina Śląska",
     "b" : "Sudety",
     "c": "Pogórze Karpackie",
-    "d" : "okolice Kamienia Pomorskiego",
+    "d" : "Okolice Kamienia Pomorskiego",
     "answer" : "c"
   },
   "42" : {
@@ -332,7 +332,7 @@
     "a" : "Nizina Śląska",
     "b" : "Wyżyna Śląska",
     "c": "Bochnia",
-    "d" : "okolice Kamienia Pomorskiego",
+    "d" : "Okolice Kamienia Pomorskiego",
     "answer" : "a"
   },
   "43" : {
@@ -340,15 +340,15 @@
     "a" : "Nizina Śląska",
     "b" : "Wyżyna Śląska",
     "c": "Bochnia",
-    "d" : "okolice Kamienia Pomorskiego",
+    "d" : "Okolice Kamienia Pomorskiego",
     "answer" : "c"
   },
   "44" : {
     "tresc" : "Najpowszechniej występujące surowce w Polsce to:",
-    "a" : "surowce skalne",
-    "b" : "surowce chemiczne",
-    "c": "surowce energetyczne",
-    "d" : "surowce metaliczne",
+    "a" : "Surowce skalne",
+    "b" : "Surowce chemiczne",
+    "c": "Surowce energetyczne",
+    "d" : "Surowce metaliczne",
     "answer" : "a"
   },
   "45" : {
@@ -404,7 +404,7 @@
     "a" : "Są to rynny podlodowcowe",
     "b" : "Są to pozostałości w skałach po dawnych przodkach, zwierzętach",
     "c": "Wały zbudowane z piasków i ze żwirów",
-    "d" : "fragmenty skał przetransportowane przez lądolód z Półwyspu Skandynawskiego",
+    "d" : "Fragmenty skał przetransportowane przez lądolód z Półwyspu Skandynawskiego",
     "answer" : "c"
   },
   "52" : {
@@ -412,7 +412,7 @@
     "a" : "Są to skały powstałe w wyniku działalności wulkanicznej w Polsce",
     "b" : "Są to skamieniałości",
     "c": "Wały zbudowane z piasków i ze żwirów",
-    "d" : "fragmenty skał przetransportowane przez lądolód z Półwyspu Skandynawskiego",
+    "d" : "Fragmenty skał przetransportowane przez lądolód z Półwyspu Skandynawskiego",
     "answer" : "d"
   },
   "53" : {
