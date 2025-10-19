@@ -1,5 +1,7 @@
-let currentQuestion = 1;
+
+let currentQuestion = 0;
 let quizData = null;
+let shuffledQuestions = [];
 let selectedAnswer = null;
 let score = 0;
 let userAnswers = {};
@@ -14,8 +16,17 @@ function quiz(subject, num) {
     if (quizPaths[subject]) {
         loadQuiz(quizPaths[subject]);
     } else {
-        console.log("błąd: nieznany przedmiot");
+        showWorkInProgress();
     }
+}
+
+function shuffleArray(array) {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
 }
 
 function loadQuiz(jsonPath) {
@@ -23,16 +34,26 @@ function loadQuiz(jsonPath) {
         .then(response => response.json())
         .then(data => {
             quizData = data;
-            currentQuestion = 1;
+
+            const questionsArray = Object.keys(data).map(key => ({
+                id: key,
+                ...data[key]
+            }));
+            shuffledQuestions = shuffleArray(questionsArray);
+
+            currentQuestion = 0;
             score = 0;
             userAnswers = {};
             showQuestion(currentQuestion);
         })
-        .catch(error => console.log(error));
+        .catch(error => {
+            console.log(error);
+            showWorkInProgress();
+        });
 }
 
-function showQuestion(number) {
-    const questionData = quizData[String(number)];
+function showQuestion(index) {
+    const questionData = shuffledQuestions[index];
     selectedAnswer = null;
 
     document.querySelector("#title_h1").innerHTML = questionData.tresc;
@@ -62,14 +83,14 @@ function showQuestion(number) {
     });
 
     const nextBtn = document.createElement("button");
-    nextBtn.textContent = currentQuestion < Object.keys(quizData).length ? "Następne" : "Zakończ";
+    nextBtn.textContent = currentQuestion < shuffledQuestions.length - 1 ? "Następne" : "Zakończ";
     nextBtn.classList.add("btn");
 
     nextBtn.addEventListener("click", () => {
-        userAnswers[String(currentQuestion)] = selectedAnswer || null;
+        userAnswers[questionData.id] = selectedAnswer || null;
         if (selectedAnswer === questionData.answer) score++;
 
-        if (currentQuestion < Object.keys(quizData).length) {
+        if (currentQuestion < shuffledQuestions.length - 1) {
             currentQuestion++;
             showQuestion(currentQuestion);
         } else {
@@ -80,9 +101,22 @@ function showQuestion(number) {
     btn_place.appendChild(nextBtn);
 }
 
+function showWorkInProgress() {
+    document.querySelector("#title_h1").innerHTML = "Praca w toku";
+    const testsContainer = document.querySelector("#subject_tests");
+    const btn_place = document.querySelector("#bottom");
+
+    testsContainer.innerHTML = "";
+    testsContainer.style.display = "flex";
+    testsContainer.style.flexDirection = "column";
+    testsContainer.style.justifyContent = "center";
+    testsContainer.style.alignItems = "center";
+
+    btn_place.innerHTML = '<button class="btn"><a href="../index.html">Powrót</a></button>';
+}
 
 function showSummary() {
-    const totalQuestions = Object.keys(quizData).length;
+    const totalQuestions = shuffledQuestions.length;
     const average = Math.round((score / totalQuestions) * 100);
 
     document.querySelector("#title_h1").innerHTML = "Podsumowanie";
@@ -117,9 +151,8 @@ function showSummary() {
     showAnswersBtn.addEventListener("click", () => {
         testsContainer.innerHTML = "";
 
-        for (let i = 1; i <= totalQuestions; i++) {
-            const q = quizData[String(i)];
-            const userAns = userAnswers[String(i)];
+        shuffledQuestions.forEach((q, index) => {
+            const userAns = userAnswers[q.id];
 
             const qDiv = document.createElement("div");
             qDiv.style.display = "flex";
@@ -130,7 +163,7 @@ function showSummary() {
 
             const questionText = document.createElement("div");
             questionText.className = "final_answer";
-            questionText.textContent = `${i}. ${q.tresc}`;
+            questionText.textContent = `${index + 1}. ${q.tresc}`;
             questionText.style.marginBottom = "10px";
 
             const userAnswerDiv = document.createElement("div");
@@ -151,9 +184,8 @@ function showSummary() {
             qDiv.appendChild(correctAnswerDiv);
 
             testsContainer.appendChild(qDiv);
-        }
+        });
     });
 
     testsContainer.appendChild(showAnswersBtn);
 }
-

@@ -86,6 +86,8 @@ body {
     justify-content: center;
     cursor: pointer;
     user-select: none;
+    text-align: center;
+    font-weight: bold;
 }
 
 .quiz:hover {
