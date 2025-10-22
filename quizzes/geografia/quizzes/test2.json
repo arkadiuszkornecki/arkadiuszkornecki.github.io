@@ -1,0 +1,106 @@
+{
+  "1" : {
+    "tresc" : "Czynniki meteorologiczne obejmują: ",
+    "a" : "Szerokość geograficzną",
+    "b" : "Położenie geograficzne",
+    "c": "Masy powietrza",
+    "d" : "Pokrycie terenu",
+    "answer" : "c"
+  },
+  "2" : {
+    "tresc" : "Czynniki niemeteorologiczne obejmują: ",
+    "a" : "Rozmieszczenie ośrodków barycznych ",
+    "b" : "Położenie geograficzne",
+    "c": "masy powietrza",
+    "d" : "Nie ma takich",
+    "answer" : "b"
+  },
+  "3" : {
+    "tresc" : "Ile w Polsce wyróżnia się termicznych pór roku? ",
+    "a" : "4",
+    "b" : "6",
+    "c": "2",
+    "d" : "3",
+    "answer" : "b"
+  },
+  "4" : {
+    "tresc" : "Jaka jest średnia roczna temperatura w Polsce?",
+    "a" : "7*C-9*C",
+    "b" : "11*C-13*C",
+    "c": "6*C-8*C",
+    "d" : "2*C-2,5*C",
+    "answer" : "a"
+  },
+  "5" : {
+    "tresc" : "W której części Polski jest najdłuższy okres wegetacyjny? ",
+    "a" : "Zachodniej",
+    "b" : "Wschodniej",
+    "c": "Północnej",
+    "d" : "Południowej",
+    "answer" : "a"
+  },
+  "6" : {
+    "tresc" : "Ile wynosi średnia roczna suma opadów atmosferycznych dla całej Polski? ",
+    "a" : "450mm",
+    "b" : "600mm",
+    "c": "320mm",
+    "d" : "400mm",
+    "answer" : "b"
+  },
+  "7" : {
+    "tresc" : "Ile wynosi średnia roczna suma opadów atmosferycznych dla Karpat? ",
+    "a" : "700mm",
+    "b" : "600mm",
+    "c": "320mm",
+    "d" : "powyżej 900mm",
+    "answer" : "d"
+  },
+  "8" : {
+    "tresc" : "Gdzie występują najniższe opady atmosferyczne w Polsce?",
+    "a" : "Na podhalu",
+    "b" : "Na pojezierzu Wielkopolskim i Nizinie Mazowieckiej",
+    "c": "W pobliżu Krakowa ze względu na wpływ gór na przedostawanie się opadów atmosferycznych do Polski",
+    "d" : "Na Dolnym Śląsku",
+    "answer" : "b"
+  },
+  "9" : {
+    "tresc" : "Od jakiej części Polski wędruje wyż arktyczny",
+    "a" : "Od południa",
+    "b" : "Od północy",
+    "c": "Od zachodu",
+    "d" : "Od wschodu",
+    "answer" : "b"
+  },
+  "10" : {
+    "tresc" : "Od jakiej części Polski wędruje wyż azorski",
+    "a" : "Od południa",
+    "b" : "Od północy",
+    "c": "Od południowego-zachodu",
+    "d" : "Od północnego-wschodu",
+    "answer" : "c"
+  },
+  "11" : {
+    "tresc" : "Od jakiej części Polski wędruje wyż zwrotnikowy",
+    "a" : "Od południa",
+    "b" : "Od północy",
+    "c": "Od zachodu",
+    "d" : "Od wschodu",
+    "answer" : "a"
+  },
+  "12" : {
+    "tresc" : "Od jakiej części Polski wędruje wyż azjatycki w zimę",
+    "a" : "Od południa",
+    "b" : "Od północy",
+    "c": "Od zachodu",
+    "d" : "Od wschodu",
+    "answer" : "d"
+  },
+  "13" : {
+    "tresc" : "Od jakiej części Polski wędruje niż islandski",
+    "a" : "Od południa",
+    "b" : "Od północego-zachodu",
+    "c": "Od południowego-zachodu",
+    "d" : "Od północnego-wschodu",
+    "answer" : "b"
+  }
+}
