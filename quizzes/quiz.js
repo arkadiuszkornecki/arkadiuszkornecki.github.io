@@ -1,4 +1,3 @@
-
 let currentQuestion = 0;
 let quizData = null;
 let shuffledQuestions = [];
@@ -6,19 +5,18 @@ let selectedAnswer = null;
 let score = 0;
 let userAnswers = {};
 
-function quiz(subject, num) {
-    const quizPaths = {
-        geografia: `quizzes/test${num}.json`,
-        biologia: `quizzes/test${num}.json`,
-        angielski: `quizzes/test${num}.json`
-    };
-
-    if (quizPaths[subject]) {
-        loadQuiz(quizPaths[subject]);
-    } else {
+document.addEventListener("DOMContentLoaded", async () => {
+    const params = new URLSearchParams(window.location.search);
+    const subject = params.get("subject");
+    const quiz = params.get("quiz");
+    if (!subject || !quiz) {
         showWorkInProgress();
+        return;
     }
-}
+
+    const path = `quizzes/${subject}/${quiz}.json`;
+    loadQuiz(path);
+})
 
 function shuffleArray(array) {
     const shuffled = [...array];
@@ -39,10 +37,10 @@ function loadQuiz(jsonPath) {
                 const question = data[key];
 
                 const answers = [
-                    { key: 'a', text: question.a },
-                    { key: 'b', text: question.b },
-                    { key: 'c', text: question.c },
-                    { key: 'd', text: question.d }
+                    {key: 'a', text: question.a},
+                    {key: 'b', text: question.b},
+                    {key: 'c', text: question.c},
+                    {key: 'd', text: question.d}
                 ];
 
                 const shuffledAnswers = shuffleArray(answers);
@@ -88,11 +86,9 @@ function showQuestion(index) {
         el.className = "odp";
         el.setAttribute("data-answer", answer.key);
         el.textContent = answer.text;
-        el.style.marginBottom = "10px";
-        el.style.borderRadius = "3px";
 
         el.addEventListener("click", () => {
-            document.querySelectorAll(".odp").forEach(d => d.style.border = "none");
+            document.querySelectorAll(".odp").forEach(d => d.style.border = "3px solid transparent");
             el.style.border = "3px solid var(--primary-color)";
             selectedAnswer = answer.key;
         });
@@ -116,6 +112,14 @@ function showQuestion(index) {
         }
     });
 
+    const returnBtn = document.createElement("button");
+    returnBtn.innerHTML = "Powrót";
+    returnBtn.classList.add("btn");
+    returnBtn.addEventListener("click", () => {
+        window.location.replace("../quizzes");
+    })
+
+    btn_place.appendChild(returnBtn);
     btn_place.appendChild(nextBtn);
 }
 
@@ -130,7 +134,7 @@ function showWorkInProgress() {
     testsContainer.style.justifyContent = "center";
     testsContainer.style.alignItems = "center";
 
-    btn_place.innerHTML = '<button class="btn"><a href="../index.html">Powrót</a></button>';
+    btn_place.innerHTML = '<button class="btn"><a href="../quizzes">Powrót</a></button>';
 }
 
 
@@ -142,7 +146,7 @@ function showSummary() {
     const testsContainer = document.querySelector("#subject_tests");
     const btn_place = document.querySelector("#bottom");
     testsContainer.innerHTML = "";
-    btn_place.innerHTML = '<button class="btn"><a href="../index.html">Powrót</a></button>';
+    btn_place.innerHTML = '<button class="btn"><a href="../quizzes">Powrót</a></button>';
 
     testsContainer.style.maxHeight = "70vh";
     testsContainer.style.overflowY = "auto";
