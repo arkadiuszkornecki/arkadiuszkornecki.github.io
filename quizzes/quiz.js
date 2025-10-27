@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const params = new URLSearchParams(window.location.search);
     const subject = params.get("subject");
     const quiz = params.get("quiz");
-    document.title = subject;
+    document.title = subject.charAt(0).toUpperCase() + subject.slice(1);
     
     if (!subject || !quiz) {
         showWorkInProgress();

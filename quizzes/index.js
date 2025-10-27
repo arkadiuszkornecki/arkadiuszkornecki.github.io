@@ -13,6 +13,8 @@ function selectSubject(subject) {
 
     const makeButton = ([quiz, title]) => `<button class="quiz" onclick='selectQuiz("${quiz}")'>${title}</button>`;
     document.querySelector("main").innerHTML = Object.entries(quizzes[subject]).map(makeButton).join("");
+
+    document.title = subject.charAt(0).toUpperCase() + subject.slice(1);
 }
 
 function selectQuiz(quiz) {
