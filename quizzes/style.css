@@ -197,3 +197,21 @@ main button {
     min-height: 50px;
     border-radius: 5px;
 }
+
+#subject_tests::-webkit-scrollbar {
+    width: 10px;
+}
+
+#subject_tests::-webkit-scrollbar-track {
+    background: var(--secondary-bg-color);
+    border-radius: 10px;
+}
+
+#subject_tests::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+#subject_tests::-webkit-scrollbar-thumb:hover {
+    background: #d39e07;
+}
