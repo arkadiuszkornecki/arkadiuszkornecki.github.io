@@ -44,6 +44,7 @@ header {
 main {
     color: var(--secondary-color);
     display: flex;
+    position: relative;
     flex-direction: column;
     border: var(--primary-color) 3px solid;
     border-radius: 10px;
