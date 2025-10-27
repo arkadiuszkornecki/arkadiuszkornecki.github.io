@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     const params = new URLSearchParams(window.location.search);
     const subject = params.get("subject");
     const quiz = params.get("quiz");
+    document.title = subject;
+    
     if (!subject || !quiz) {
         showWorkInProgress();
         return;
