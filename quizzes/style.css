@@ -187,12 +187,13 @@ main button {
     position: relative;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
     width: 70%;
     user-select: none;
     font-family: var(--primary-font), serif;
     font-size: 20px;
     font-weight: bold;
-    height: 50px;
+    min-height: 50px;
     border-radius: 5px;
 }
