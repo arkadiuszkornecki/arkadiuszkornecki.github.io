@@ -46,14 +46,16 @@ main {
     display: flex;
     position: relative;
     flex-direction: column;
+    justify-content: space-evenly;
     border: var(--primary-color) 3px solid;
     border-radius: 10px;
     margin: 20px;
     padding: 10px;
     width: 80vw;
     align-items: center;
-    justify-content: center;
     gap: 15px;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
 }
 
 footer {
@@ -155,12 +157,6 @@ main button {
     font-weight: bold;
 }
 
-@media only screen and (min-width: 1300px) {
-    main {
-        width: 45vw;
-    }
-}
-
 .odp {
     display: flex;
     align-items: center;
@@ -215,4 +211,15 @@ main button {
 
 #subject_tests::-webkit-scrollbar-thumb:hover {
     background: #d39e07;
+}
+
+@media only screen and (min-width: 1300px) {
+    main {
+        width: 45vw;
+    }
+
+    #subject_tests {
+        width: 50vw;
+        flex-direction: column;
+    }
 }
