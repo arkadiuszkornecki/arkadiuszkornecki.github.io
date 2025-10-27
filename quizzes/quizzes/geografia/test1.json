@@ -1,0 +1,490 @@
+{
+  "1": {
+    "tresc" : "W jakiej części Europy znajduje się Polska?",
+    "a" : "Zachodniej",
+    "b" : "Wschodniej",
+    "c": "Północno-Wschodniej",
+    "d" : "Środkowej",
+    "answer" : "d"
+  },
+  "2" : {
+    "tresc" : "W jakiej części świata znajduje się Polska?",
+    "a" : "Na półkuli północnej i wschodniej w klimacie równikowym",
+    "b" : "Na półkuli południowej i zachodniej w klimacie w klimacie podzwrotnikowym",
+    "c": "Na półkuli wschodniej i północnej w klimacie umiarkowanym",
+    "d" : "Na półkuli południowej w klimacie okołobiegunowym",
+    "answer" : "c"
+  },
+  "3" : {
+    "tresc" : "W jakiej strefie czasowej leży Polska?",
+    "a" : "Środkowoeuropejskiej",
+    "b" : "Centralnej",
+    "c": "Zachodnioeuropejskiej",
+    "d" : "Nie ma strefy czasowej",
+    "answer" : "a"
+  },
+  "4" : {
+    "tresc" : "Najbardziej wysuniętym punktem na północy Polski jest: ",
+    "a" : "Władysławowo",
+    "b" : "Jastrzębia Góra / przylądek Rozewie",
+    "c": "Szczyt Opołonek",
+    "d" : "Port morski w Szczecinie",
+    "answer" : "b"
+  },
+  "5" : {
+    "tresc" : "Ile wynosi powierzchnia Polski (administracyjna)?",
+    "a" : "312 722km2",
+    "b" : "322 719km2",
+    "c": "298 722km2",
+    "d" : "439 722km2",
+    "answer" : "a"
+  },
+  "6" : {
+    "tresc" : "Ile wynosi powierzchnia Polski (całkowita)?",
+    "a" : "312 722km2",
+    "b" : "322 719km2",
+    "c": "298 722km2",
+    "d" : "439 722km2",
+    "answer" : "b"
+  },
+  "7" : {
+    "tresc" : "Ile wynosi łączna długość granic Polski?",
+    "a" : "3 511km w tym granica morska 440km",
+    "b" : "5 053km, Polska nie ma granicy morskiej",
+    "c": "3 511km w tym granica morska 580km",
+    "d" : "4 823km w tym granica morska 230km",
+    "answer" : "a"
+  },
+  "8" : {
+    "tresc" : "Wskaż wszystkich sąsiadów Polski",
+    "a" : "Niemcy, Czechy, Słowacja, Węgry, Słowienia, Ukraina, Chorwacja",
+    "b" : "Rosja, Niemcy, Ukraina, Białoruś, Szwecja, Finlandia, Dania",
+    "c": "Rosja, Litwa, Białoruś, Ukraina, Słowacja, Czechy, Łotwa",
+    "d" : "Rosja, Litwa, Białoruś, Ukraina, Słowacja, Czechy, Niemcy",
+    "answer" : "d"
+  },
+  "9" : {
+    "tresc" : "Z iloma państwami graniczy Polska?",
+    "a" : "6",
+    "b" : "3",
+    "c": "Nie graniczy",
+    "d" : "7",
+    "answer" : "d"
+  },
+  "10" : {
+    "tresc" : "Wskaż wszystkie jednostki podziału regionalnego",
+    "a" : "obszar, prowincja, mezoregion, makroregion, region",
+    "b" : "obszar, podobszar, prowincja, podprowincja, makroregion, mezoregion",
+    "c": "obszar, podobszar, prowincja, podprowincja, makroregion, mezoregion, region",
+    "d" : "obszar, podobszar, ukształtowanie, region, makroregion, położenie",
+    "answer" : "b"
+  },
+  "11" : {
+    "tresc" : "Które fragmenty Polski zaliczane są do Europy Wschodniej?",
+    "a" : "Północno-wschodnie",
+    "b" : "Południowo-wschodnie",
+    "c": "Południowo-zachodnie",
+    "d" : "Północno-zachodnie",
+    "answer" : "a"
+  },
+  "12" : {
+    "tresc" : "Większość terytorium Polski należy do:",
+    "a" : "Europy Zachodniej",
+    "b" : "Europy Wschodniej",
+    "c": "Europy Północno-zachodniej",
+    "d" : "Europy Południowo-wschodniej",
+    "answer" : "a"
+  },
+  "13" : {
+    "tresc" : "Konsekwencją rozciągłości południkowej jest:",
+    "a" : "Dłuższy dzień na północy Polski w czasie przesilenia letniego",
+    "b" : "Dłuższy dzień na południu Polski w czasie przesilenia letniego",
+    "c": "Nie wpływa to na nic",
+    "d" : "Dłuższa noc (o godzinę) na południu Polski w czasie przesilenia zimowego",
+    "answer" : "a"
+  },
+  "14" : {
+    "tresc" : "Cechą sprzyjającą rozwojowi rolnictwa jest:",
+    "a" : "Położenie na styku struktur geologicznych",
+    "b" : "Usytuowanie pomiędzy Morzem Bałtyckim a Karpatami i Sudetami",
+    "c": "Nie ma takiej cechy",
+    "d" : "Położenie na niżu środkowo-europejskim",
+    "answer" : "d"
+  },
+  "15" : {
+    "tresc" : "W którym roku Polska weszła do NATO?",
+    "a" : "1989",
+    "b" : "2004",
+    "c": "2001",
+    "d" : "1999",
+    "answer" : "d"
+  },
+  "16" : {
+    "tresc" : "W którym roku Polska weszła do Unii Europejskiej?",
+    "a" : "1989",
+    "b" : "2004",
+    "c": "2001",
+    "d" : "1999",
+    "answer" : "b"
+  },
+  "17" : {
+    "tresc" : "Punktem najbardziej wysuniętym na wschód Polski jest:",
+    "a" : "Zakole Bugu",
+    "b" : "Szczyt Opołonek",
+    "c": "Miasto Wyżłów",
+    "d" : "Punkt odpływu rzeki Dunaj",
+    "answer" : "a"
+  },
+  "18" : {
+    "tresc" : "Punktem najbardziej wysuniętym na południe Polski jest:",
+    "a" : "Zakole Bugu",
+    "b" : "Szczyt Opołonek",
+    "c": "Rysy",
+    "d" : "Zakopane",
+    "answer" : "b"
+  },
+  "19" : {
+    "tresc" : "Punktem najbardziej wysuniętym na zachód Polski jest:",
+    "a" : "Zalew szczeciński",
+    "b" : "Lublin",
+    "c": "Zakole Odry",
+    "d" : "Jędrzychowice",
+    "answer" : "c"
+  },
+  "20" : {
+    "tresc" : "Określenie krainy geograficzne to synonim:",
+    "a" : "Regionów geograficznych",
+    "b" : "Granic naturalnych",
+    "c": "Platformy paleozoicznej",
+    "d" : "Nie ma synonimu",
+    "answer" : "a"
+  },
+  "21" : {
+    "tresc" : "Jakie makroregiony wyróżniamy w obrębie Sudetów w Polsce?",
+    "a" : "Przedgórze Sudeckie, Pogórze Zachodniosudeckie, Sudety Zachodnie, Sudety Środkowe, Sudety Wschodnie",
+    "b" : "Sudety Zachodnie, Sudety Wschodnie, Sudety Środkowe",
+    "c": "Sudety Środkowe, Pogórze Zachodniosudeckie, Przedgórze Sudeckie",
+    "d" : "Przedgórze Sudeckie, Pogórze Zachodniosudeckie",
+    "answer" : "a"
+  },
+  "22" : {
+    "tresc" : "Na ile województw jest podzielona Polska?",
+    "a" : "16",
+    "b" : "49",
+    "c": "3",
+    "d" : "21",
+    "answer" : "a"
+  },
+  "23" : {
+    "tresc" : "Platformy, na których leży Polska oddzielone są od siebie strefą:",
+    "a" : "B-F",
+    "b" : "T-T",
+    "c": "D-D",
+    "d" : "A-A",
+    "answer" : "b"
+  },
+  "24" : {
+    "tresc" : "Na ilu wielkich jednostkach geologicznych Europy leży Polska?",
+    "a" : "2",
+    "b" : "5",
+    "c": "4",
+    "d" : "3",
+    "answer" : "d"
+  },
+  "25" : {
+    "tresc" : "Charakterystyczną rzeczą dla obszaru fałdowań paleozoicznych jest to że składają się z:",
+    "a" : "Sudetów, a także Gór Świętokrzyskich",
+    "b" : "Karpat",
+    "c": "Alp oraz dorzecza Dunaju",
+    "d" : "Zapadliska przedkarpackiego",
+    "answer" : "a"
+  },
+  "26" : {
+    "tresc" : "Charakterystyczną rzeczą dla obszaru fałdowań alpejskich jest to że składają się z:",
+    "a" : "Sudetów, a także Gór Świętokrzyskich",
+    "b" : "Karpat oraz zapadliska przedkarpackiego",
+    "c": "Alp oraz dorzecza Dunaju",
+    "d" : "Nie ma takiego obszaru",
+    "answer" : "b"
+  },
+  "27" : {
+    "tresc" : "W orogenezie kaledońskiej częściowemu sfałdowaniu i wypiętrzeniu uległy skału budujące:",
+    "a" : "Alpy",
+    "b" : "Himalaje",
+    "c": "Sudety oraz Góry Świętokrzyskie",
+    "d" : "Była tylko orogeneza mezoziczna",
+    "answer" : "c"
+  },
+  "28" : {
+    "tresc" : "Do czego doprowadziła orogeneza alpejska?",
+    "a" : "Powstania zalewu szczecińskiego",
+    "b" : "Powstania zapadlisk na terenie Chin",
+    "c": "Powstania Karpat, a także odmłodzenia oraz powstania licznych spękań i uskoków tektonicznych w Sudetach",
+    "d" : "Wybuchu Etny we Włoszech",
+    "answer" : "c"
+  },
+  "29" : {
+    "tresc" : "Do czego doprowadziło zalanie wodami morskimi zapadliska przedkarpackiego?",
+    "a" : "Powstania złóż kwarcu i gipsu",
+    "b" : "Powstania złóż miedzi i żelaza",
+    "c": "Erozji skał i powstania podwodnych jaskiń",
+    "d" : "Powstania złóż soli kamiennej oraz siarki rodzimej",
+    "answer" : "d"
+  },
+  "30" : {
+    "tresc" : "Powstanie Morza Bałtyckiego miało miejsce w erze:",
+    "a" : "Mezozicznej",
+    "b" : "Prekambryjskiej",
+    "c": "Paleozoicznej",
+    "d" : "Kenozoicznej",
+    "answer" : "d"
+  },
+  "31" : {
+    "tresc" : "Ile trwał okres czwartorzędu w erze kenozoicznej? [mln lat]",
+    "a" : "2,6 do dziś",
+    "b" : "299-252",
+    "c": "4600-541",
+    "d" : "444-419",
+    "answer" : "a"
+  },
+  "32" : {
+    "tresc" : "W jakim okresie w Sudetach zachodziły procesy wulkaniczne?",
+    "a" : "W kambr",
+    "b" : "W sylur",
+    "c": "W jura",
+    "d" : "W neogen",
+    "answer" : "a"
+  },
+  "33" : {
+    "tresc" : "Jakie surowce mineralne występują w Polsce?",
+    "a" : "Energetyczne, skalne, chemiczne, metaliczne",
+    "b" : "Metaliczne, skalne, organiczne",
+    "c": "Chemiczne, skalne, organiczne, energetyczne",
+    "d" : "Skalne, chemiczne, organiczne",
+    "answer" : "a"
+  },
+  "34" : {
+    "tresc" : "Przykładem surowca energetycznego nie jest:",
+    "a" : "Węgiel kamienny",
+    "b" : "Gaz ziemny",
+    "c": "Siarka",
+    "d" : "Ropa naftowa",
+    "answer" : "c"
+  },
+  "35" : {
+    "tresc" : "Przykładem surowca metalicznego jest:",
+    "a" : "Gips",
+    "b" : "Siarka",
+    "c": "Złoto",
+    "d" : "Ropa naftowa",
+    "answer" : "c"
+  },
+  "36" : {
+    "tresc" : "Przykładem surowca skalnego nie jest:",
+    "a" : "Gips",
+    "b" : "Glin",
+    "c": "Piasek",
+    "d" : "Złoto",
+    "answer" : "d"
+  },
+  "37" : {
+    "tresc" : "Przykładem surowca chemicznego nie jest:",
+    "a" : "Fosforyt",
+    "b" : "Siarka",
+    "c": "Sól kamienna",
+    "d" : "gaz ziemny",
+    "answer" : "d"
+  },
+  "38" : {
+    "tresc" : "Główne występowanie węgla kamiennego w Polsce to:",
+    "a" : "Nizina Śląska",
+    "b" : "Wieliczka",
+    "c": "Nizina Południowowielkopolska",
+    "d" : "Wyżyna Śląska",
+    "answer" : "d"
+  },
+  "39" : {
+    "tresc" : "Główne występowanie węgla brunatnego w Polsce to:",
+    "a" : "Nizina Śląska",
+    "b" : "Sudety",
+    "c": "Nizina Południowowielkopolska",
+    "d" : "Wyżyna Śląska",
+    "answer" : "a"
+  },
+  "40" : {
+    "tresc" : "Główne występowanie ropy naftowej w Polsce to:",
+    "a" : "Nizina Śląska",
+    "b" : "Sudety",
+    "c": "Pojezierze Wielkopolskie",
+    "d" : "Pogórze Karpackie",
+    "answer" : "d"
+  },
+  "41" : {
+    "tresc" : "Główne występowanie gazu ziemnego w Polsce to:",
+    "a" : "Nizina Śląska",
+    "b" : "Sudety",
+    "c": "Pogórze Karpackie",
+    "d" : "Okolice Kamienia Pomorskiego",
+    "answer" : "c"
+  },
+  "42" : {
+    "tresc" : "Główne występowanie rudy miedzi w Polsce to:",
+    "a" : "Nizina Śląska",
+    "b" : "Wyżyna Śląska",
+    "c": "Bochnia",
+    "d" : "Okolice Kamienia Pomorskiego",
+    "answer" : "a"
+  },
+  "43" : {
+    "tresc" : "Główne występowanie soli kamiennej w Polsce to:",
+    "a" : "Nizina Śląska",
+    "b" : "Wyżyna Śląska",
+    "c": "Bochnia",
+    "d" : "Okolice Kamienia Pomorskiego",
+    "answer" : "c"
+  },
+  "44" : {
+    "tresc" : "Najpowszechniej występujące surowce w Polsce to:",
+    "a" : "Surowce skalne",
+    "b" : "Surowce chemiczne",
+    "c": "Surowce energetyczne",
+    "d" : "Surowce metaliczne",
+    "answer" : "a"
+  },
+  "45" : {
+    "tresc" : "Wapienie, dolomity, gipsy i inne chemiczne skały osadowe pozyskuje się przede wszystkim: ",
+    "a" : "Na nizinach",
+    "b" : "Na wyżynach",
+    "c": "W górach",
+    "d" : "Jedynie w Sudetach",
+    "answer" : "b"
+  },
+  "46" : {
+    "tresc" : "Skały takie jak granit, bazalt czy marmur wydobywa się głównie (w Polsce): ",
+    "a" : "W Alpach",
+    "b" : "Na Dolnym Śląsku",
+    "c": "Na nizinach",
+    "d" : "Nieopodal zakola Bugu",
+    "answer" : "b"
+  },
+  "47" : {
+    "tresc" : "Główne zastosowanie gazu ziemnego to: ",
+    "a" : "Produkcja olejów, smarów, asfaltu",
+    "b" : "Produkcja włókien sztucznych, amoniaku oraz nawozu",
+    "c": "Produkcja blach, drutów",
+    "d" : "Produkcja rur",
+    "answer" : "b"
+  },
+  "48" : {
+    "tresc" : "Główne zastosowanie cynku to: ",
+    "a" : "Pokrycie żelaza w celach antykorozyjnych",
+    "b" : "Wchodzi w skład benzyny",
+    "c": "Produkcja leków",
+    "d" : "Produkcja termometrów oraz wyrobów medycznych",
+    "answer" : "a"
+  },
+  "49" : {
+    "tresc" : "Z czego głównie wynika rozmieszczenie surowców mineralnych w Polsce? ",
+    "a" : "Z prędkością nachodzenia się na siebie płyt tektonicznych",
+    "b" : "Z ciśnienia atmosferycznego",
+    "c": "Z działalnością człowieka",
+    "d" : "Z przeszłością geologiczną Polski",
+    "answer" : "d"
+  },
+  "50" : {
+    "tresc" : "Co miało główny wpływ na ukształtowanie powierzchni Polski? ",
+    "a" : "Działalność człowieka na obszarach nizinnych",
+    "b" : "Działalność człowieka na obszarach wyżynnych",
+    "c": "Ruchy górotwórcze",
+    "d" : "Wojny z krajami europejskimi",
+    "answer" : "c"
+  },
+  "51" : {
+    "tresc" : "Co to są Ozy? ",
+    "a" : "Są to rynny podlodowcowe",
+    "b" : "Są to pozostałości w skałach po dawnych przodkach, zwierzętach",
+    "c": "Wały zbudowane z piasków i ze żwirów",
+    "d" : "Fragmenty skał przetransportowane przez lądolód z Półwyspu Skandynawskiego",
+    "answer" : "c"
+  },
+  "52" : {
+    "tresc" : "Co to są Głazy narzutowe? ",
+    "a" : "Są to skały powstałe w wyniku działalności wulkanicznej w Polsce",
+    "b" : "Są to skamieniałości",
+    "c": "Wały zbudowane z piasków i ze żwirów",
+    "d" : "Fragmenty skał przetransportowane przez lądolód z Półwyspu Skandynawskiego",
+    "answer" : "d"
+  },
+  "53" : {
+    "tresc" : "Jaki był zasięg zlodowaceń północnopolskich?",
+    "a" : "19%",
+    "b" : "85%",
+    "c": "90%",
+    "d" : "30%",
+    "answer" : "d"
+  },
+  "54" : {
+    "tresc" : "Co to są sandry?",
+    "a" : "Szerokie doliny utworzone na przedpolu lądolodu",
+    "b" : "Rozległe równiny zbudowane ze żwiru i z piasku naniesonego przez wody roztopowe",
+    "c": "Długie i wąskie zagłębienia wyżłobione przez wody płynące pod lądolodem",
+    "d" : "Wały zbudowane z piasków i ze żwirów osadzonych w szczelinach lub tunelach lodowcowych",
+    "answer" : "b"
+  },
+  "55" : {
+    "tresc" : "Najwyższy szczyt Polski to:",
+    "a" : "Mount Everest",
+    "b" : "Mount Blanc",
+    "c": "Gerlach",
+    "d" : "Rysy",
+    "answer" : "d"
+  },
+  "56" : {
+    "tresc" : "Najwyższy szczyt Tatr to:",
+    "a" : "Mount Everest",
+    "b" : "Mount Blanc",
+    "c": "Gerlach",
+    "d" : "Rysy",
+    "answer" : "c"
+  },
+  "57" : {
+    "tresc" : "Ile mierzy najwyższy szczyt Polski?",
+    "a" : "2 499m n.p.m",
+    "b" : "2 655m n.p.m",
+    "c": "2 550m n.p.m",
+    "d" : "1 992m n.p.m",
+    "answer" : "a"
+  },
+  "58" : {
+    "tresc" : "Najniżej położonym punktem w Polsce jest:",
+    "a" : "Punkt koło Elbląga",
+    "b" : "Punkt nad zalewem szczecińskim",
+    "c": "Morskie oko",
+    "d" : "Wałbrzych",
+    "answer" : "a"
+  },
+  "59" : {
+    "tresc" : "Ogólne nachylenie obszaru Polski przebiega z:",
+    "a" : "Zachodu na wschód",
+    "b" : "Północnego wschodu na północny zachód",
+    "c": "Północy na południe",
+    "d" : "Wschodu na zachód",
+    "answer" : "c"
+  },
+  "60" : {
+    "tresc" : "Średnia wysokość Polski to:",
+    "a" : "658m",
+    "b" : "522m",
+    "c": "280m",
+    "d" : "173m",
+    "answer" : "d"
+  },
+  "61" : {
+    "tresc" : "Istotną cechą rzeźby terenu Polski jest:",
+    "a" : "Przewaga wyżyn",
+    "b" : "Występowanie majwiększego pasu w Polsce: pasu kotlin",
+    "c": "Występowanie majwiększego pasu w Polsce: pasu pobrzeży",
+    "d" : "Pasowy układ",
+    "answer" : "d"
+  }
+}
