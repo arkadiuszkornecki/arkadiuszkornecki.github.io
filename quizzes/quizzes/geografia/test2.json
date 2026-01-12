@@ -510,5 +510,69 @@
     "c": "Jeziora wąskie i wydłużone, mają duże spadki dna i osiągają znaczne głębokości",
     "d" : "Jeziora płytkie, mają niskie bagniste brzegi",
     "answer" : "d"
+  },
+  "65" : {
+    "tresc" : "Jeziorem morenowym nie jest: ",
+    "a" : "Mamry",
+    "b" : "Niegocin",
+    "c": "Śniardwy",
+    "d" : "Hańcza",
+    "answer" : "d"
+  },
+  "66" : {
+    "tresc" : "Jeziorem przymorskim nie jest: ",
+    "a" : "Łebsko",
+    "b" : "Jamno",
+    "c": "Śniardwy",
+    "d" : "Gardno",
+    "answer" : "c"
+  },
+  "67" : {
+    "tresc" : "Jeziorem rynnowym nie jest: ",
+    "a" : "Hańcza",
+    "b" : "Gopło",
+    "c": "Jeziorak",
+    "d" : "Niegocin",
+    "answer" : "d"
+  },
+  "68" : {
+    "tresc" : "Jeziorem cyrkowym nie jest: ",
+    "a" : "Jamno",
+    "b" : "Morskie Oko",
+    "c": "Czarny Staw pod Rysami",
+    "d" : "Czarny Staw Gąsienicowy w Tatrach",
+    "answer" : "a"
+  },
+  "69" : {
+    "tresc" : "Jeziorem deltowym jest: ",
+    "a" : "Druzno",
+    "b" : "Łebsko",
+    "c": "Jezioro Raduńskie Dolne",
+    "d" : "Mamry",
+    "answer" : "a"
+  },
+  "70" : {
+    "tresc" : "Jaki jest największy sztuczny zbiornik wodny w Polsce? ",
+    "a" : "Jezioro Solińskie",
+    "b" : "Morskie Oko",
+    "c": "Jezioro Raduńskie Dolne",
+    "d" : "Jezioro Czorsztyńskie",
+    "answer" : "a"
+  },
+  "71" : {
+    "tresc" : "Jaką pojemność ma największy sztuczny zbiornik wodny w Polsce? ",
+    "a" : "472 mln m^3",
+    "b" : "330 mln m^3",
+    "c": "638 mln m^3",
+    "d" : "122 mln m^3",
+    "answer" : "a"
+  },
+  "72" : {
+    "tresc" : "Jaką wysokość ma największa zapora w Polsce? ",
+    "a" : "82m",
+    "b" : "1200m",
+    "c": "533m",
+    "d" : "168m",
+    "answer" : "a"
   }
 }
