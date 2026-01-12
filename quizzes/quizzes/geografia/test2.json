@@ -217,7 +217,7 @@
   },
   "28" : {
     "tresc" : "Polska niemal w całości znajduje się w zlewisku: ",
-    "a" : "Oceanu Atlantyckiego",
+    "a" : "Pacyfiku",
     "b" : "Morza Czarnego",
     "c": "Morza Bałtyckiego",
     "d" : "Morza Żółtego",
@@ -278,5 +278,61 @@
     "c": "Regulowanie koryt rzecznych jedynie tam, gdzie jest to konieczne",
     "d" : "Odpowiednie zagospodarowywanie terenów nadrzecznych",
     "answer" : "b"
+  },
+  "36" : {
+    "tresc" : "Ile zajmuje dorzecze Wisły?(km^2)",
+    "a" : "172 587",
+    "b" : "106 055",
+    "c": "325 443",
+    "d" : "244 349",
+    "answer" : "a"
+  },
+  "37" : {
+    "tresc" : "Ile zajmuje dorzecze Odry?(km^2)",
+    "a" : "172 587",
+    "b" : "106 056",
+    "c": "325 443",
+    "d" : "244 349",
+    "answer" : "b"
+  },
+  "38" : {
+    "tresc" : "Ile zajmuje dorzecze Dunaju?(km^2)",
+    "a" : "4255",
+    "b" : "233",
+    "c": "553",
+    "d" : "383",
+    "answer" : "d"
+  },
+  "39" : {
+    "tresc" : "Ile zajmuje dorzecze Dniestru?(km^2)",
+    "a" : "383",
+    "b" : "532",
+    "c": "1523",
+    "d" : "233",
+    "answer" : "d"
+  },
+  "40" : {
+    "tresc" : "Ile zajmuje dorzecze Niemna?(km^2)",
+    "a" : "2512",
+    "b" : "532",
+    "c": "1523",
+    "d" : "233",
+    "answer" : "a"
+  },
+  "41" : {
+    "tresc" : "Ile zajmuje dorzecze rzeki pobrzeża Bałtyku?(km^2)",
+    "a" : "10 534",
+    "b" : "21 323",
+    "c": "30 666",
+    "d" : "32 555",
+    "answer" : "c"
+  },
+  "42" : {
+    "tresc" : "Ile wynosi asymetria dorzeczy?",
+    "a" : "5:3",
+    "b" : "7:1",
+    "c": "3:7",
+    "d" : "2:3",
+    "answer" : "c"
   }
 }
