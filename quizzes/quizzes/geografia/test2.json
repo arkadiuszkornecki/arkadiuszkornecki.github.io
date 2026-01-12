@@ -102,5 +102,117 @@
     "c": "Od południowego-zachodu",
     "d" : "Od północnego-wschodu",
     "answer" : "b"
+  },
+  "14" : {
+    "tresc" : "Zestawienie przychodów i ubytków wody oraz jej retencji w określonym czasie nazywane jest:",
+    "a" : "Wkaźnikiem dostępności wody",
+    "b" : "Bilansem wodnym",
+    "c": "Bilansem hydrologicznym",
+    "d" : "Rachunkiem wodnym",
+    "answer" : "b"
+  },
+  "15" : {
+    "tresc" : "Jaka ilość wody zasila obszar Polski w ciągu roku?",
+    "a" : "192km^3",
+    "b" : "56km^3",
+    "c": "76km^3",
+    "d" : "60km^3",
+    "answer" : "a"
+  },
+  "16" : {
+    "tresc" : "Jaki procent wody, która zasila Polskę co roku stanowią opady atmosferyczne?",
+    "a" : "65%",
+    "b" : "67%",
+    "c": "97%",
+    "d" : "95%",
+    "answer" : "c"
+  },
+  "17" : {
+    "tresc" : "Jaki procent wody, która zasila Polskę co roku stanowią rzeki, które mają swe źródła POZA GRANICAMI kraju?",
+    "a" : "12%",
+    "b" : "9%",
+    "c": "3%",
+    "d" : "6%",
+    "answer" : "c"
+  },
+  "18" : {
+    "tresc" : "Ile wynoszą straty zasobów wodnych w wyniku parowania oraz zużycia gospodarczego w Polsce?",
+    "a" : "30% dostarczanej wody",
+    "b" : "55% dostarczanej wody",
+    "c": "47% dostarczanej wody",
+    "d" : "70% dostarczanej wody",
+    "answer" : "d"
+  },
+  "19" : {
+    "tresc" : "W wyniku czego odnotowuje się największe straty zasobów wodnych w Polsce?",
+    "a" : "Parowania i zużycia gospodarczego",
+    "b" : "Odpływu powierzchniowego i odpływu powierzchniowego",
+    "c": "Wykorzystania do produkcji energii (np. elektrownie wodne)",
+    "d" : "Napływu ludności z poza UE",
+    "answer" : "a"
+  },
+  "20" : {
+    "tresc" : "Do porównania zasobów wodnych możliwych do wykorzystania hydrolodzy posługują się:  ",
+    "a" : "Wskaźnikiem dostępności wody",
+    "b" : "Bilansem wodnym",
+    "c": "Przepływem średnim",
+    "d" : "Retencją wodną",
+    "answer" : "a"
+  },
+  "21" : {
+    "tresc" : "Co to jest wskaźnik dostępności wody?  ",
+    "a" : "Jest to różnica pomiędzy ilością wody z opadów atmosferycznych a źródeł wody tj. rzeki",
+    "b" : "Jest to mapa z oznaczeniami dostępności do wody słodkiej(np. oczka wodne, jeziora, stawy) i słonej(np. Zatoki Morza Bałtyckiego)",
+    "c": "Jest to roczna suma opadów na terenie całego kraju",
+    "d" : "Jest to ilość wody dostępnej do wykorzystania przez jednego mieszkańca kraju w ciągu roku",
+    "answer" : "d"
+  },
+  "22" : {
+    "tresc" : "W jaki sposób są rozmieszczone zasoby wodne w Polsce?",
+    "a" : "Polska nie posiada stałych zasobów wodnych",
+    "b" : "Głównie na południu kraju",
+    "c": "Równomiernie",
+    "d" : "Nierównomiernie",
+    "answer" : "d"
+  },
+  "23" : {
+    "tresc" : "Co oznacza, że Polska ma nierównomierne rozmieszczenie zasobów wodnych?",
+    "a" : "Występują obszary niedoborów i nadwyżek wody",
+    "b" : "Jedyne skupiska wody są na dalekiej północy Polski",
+    "c": "Polska posiada tylko dostęp do morza",
+    "d" : "Główne zasoby wodne występują w górach",
+    "answer" : "a"
+  },
+  "24" : {
+    "tresc" : "Jaki obaszar m.in. jest narażony na deficyt wody dla rolnictwa?",
+    "a" : "Zalew szczeciński",
+    "b" : "Pojezierze Wielkopolskie",
+    "c": "Okolice Białegostoku",
+    "d" : "Okolice Rzeszowa",
+    "answer" : "b"
+  },
+  "25" : {
+    "tresc" : "Jaki obaszar m.in. jest narażony na deficyt wody dla przemyślu i gospodarki komunalnej?",
+    "a" : "Podlasie",
+    "b" : "Wyżyna Śląska",
+    "c": "Województwo Łódzkie",
+    "d" : "Okolice Trójmiasta",
+    "answer" : "b"
+  },
+  "26" : {
+    "tresc" : "Główne przyczyny zagrożenia niedoborem wody w Polsce to:",
+    "a" : "Brak napływu wody z Morza Bałtyckiego",
+    "b" : "Dobra godpodarka wodna",
+    "c": "Występowanie śnieżnych zim",
+    "d" : "Niewielka średnia roczna suma opadów atmosferycznych",
+    "answer" : "d"
+  },
+  "27" : {
+    "tresc" : "Głównym zagrożeniem dla właściwego funkcjonowania świata roślin i zwierząt jest:",
+    "a" : "Bezśnieżne zimy",
+    "b" : "Ruch płyt tektonicznych",
+    "c": "",
+    "d" : "Długotrwałe susze",
+    "answer" : "d"
   }
 }
