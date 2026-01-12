@@ -211,8 +211,16 @@
     "tresc" : "Głównym zagrożeniem dla właściwego funkcjonowania świata roślin i zwierząt jest:",
     "a" : "Bezśnieżne zimy",
     "b" : "Ruch płyt tektonicznych",
-    "c": "",
+    "c": "Długotrwałe nawodnienie",
     "d" : "Długotrwałe susze",
     "answer" : "d"
+  },
+  "28" : {
+    "tresc" : "Polska niemal w całości znajduje się w zlewisku: ",
+    "a" : "Oceanu Atlantyckiego",
+    "b" : "Morza Czarnego",
+    "c": "Morza Bałtyckiego",
+    "d" : "Morza Żółtego",
+    "answer" : "c"
   }
 }
