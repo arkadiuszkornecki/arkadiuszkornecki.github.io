@@ -222,5 +222,61 @@
     "c": "Morza Bałtyckiego",
     "d" : "Morza Żółtego",
     "answer" : "c"
+  },
+  "29" : {
+    "tresc" : "Dwie największe rzeki w Polsce to: ",
+    "a" : "Bug i Łaba",
+    "b" : "Warta i Dunaj",
+    "c": "Wisła i Odra",
+    "d" : "Wisła i Bug",
+    "answer" : "c"
+  },
+  "30" : {
+    "tresc" : "Jaki procent Polski zajmują rzeki Wisła i Odra? ",
+    "a" : "63%",
+    "b" : "53%",
+    "c": "88%",
+    "d" : "32%",
+    "answer" : "c"
+  },
+  "31" : {
+    "tresc" : "W jaki sposób nachylona jest powierzchnia Polski? ",
+    "a" : "Z północnego zachodu na południowy wschód",
+    "b" : "Z północy na południe",
+    "c": "Z południowego wschodu na północny zachód",
+    "d" : "Z południowego zachodu na północny wschód",
+    "answer" : "c"
+  },
+  "32" : {
+    "tresc" : "Ile wynosi średni przepływ odnotowywany na Wiśle? (Średnio) ",
+    "a" : "535m^3/s",
+    "b" : "1032m^3/s",
+    "c": "1046m^3/s",
+    "d" : "1268m^3/s",
+    "answer" : "c"
+  },
+  "33" : {
+    "tresc" : "Ile wynosi średni przepływ odnotowywany na Odrze? (Średnio) ",
+    "a" : "535m^3/s",
+    "b" : "1032m^3/s",
+    "c": "1046m^3/s",
+    "d" : "1268m^3/s",
+    "answer" : "a"
+  },
+  "34" : {
+    "tresc" : "Kiedy najczęściej występują wysokie przepływy oraz wysokie stany wód?",
+    "a" : "Zimą i latem",
+    "b" : "Latem i jesienią",
+    "c": "Wiosną i latem",
+    "d" : "Jesienią i zimą",
+    "answer" : "c"
+  },
+  "35" : {
+    "tresc" : "Do podstawowych działań mających na celu zapobieganie powodziom oraz łagodzenie ich skutków nie należy:",
+    "a" : "Wznoszenie wałów przeciwpowodziowych",
+    "b" : "Uruchomienie wszystkich elektrownii wodnych",
+    "c": "Regulowanie koryt rzecznych jedynie tam, gdzie jest to konieczne",
+    "d" : "Odpowiednie zagospodarowywanie terenów nadrzecznych",
+    "answer" : "b"
   }
 }
