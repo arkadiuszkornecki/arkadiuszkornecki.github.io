@@ -55,9 +55,9 @@ function loadQuiz(jsonPath) {
                 };
             });
 
-            //shuffledQuestions = shuffleArray(questionsArray);
-            const allShuffled = shuffleArray(questionsArray);
-            shuffledQuestions = allShuffled.slice(0, 20);
+            shuffledQuestions = shuffleArray(questionsArray);
+            //const allShuffled = shuffleArray(questionsArray);
+            //shuffledQuestions = allShuffled.slice(0, 20);
 
             currentQuestion = 0;
             score = 0;
