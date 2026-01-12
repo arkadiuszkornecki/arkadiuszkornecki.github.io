@@ -574,5 +574,37 @@
     "c": "533m",
     "d" : "168m",
     "answer" : "a"
+  },
+  "73" : {
+    "tresc" : "Ile występuje sztuczny zbiornik wodny w Polsce? ",
+    "a" : "740",
+    "b" : "555",
+    "c": "320",
+    "d" : "140",
+    "answer" : "d"
+  },
+  "74" : {
+    "tresc" : "Jakie funkcje spełniają jeziora i sztuczne zbiorniki wodne? ",
+    "a" : "Przemysłowe, energetyczne, geotermalne",
+    "b" : "Przemysłowe, komunalne, rolniczne",
+    "c": "Energetyczne, geotermalne, meteorologiczne",
+    "d" : "Energetyczne, roliczne, meteorologiczne",
+    "answer" : "b"
+  },
+  "75" : {
+  "tresc" : "Jeziorem zakolowym jest: ",
+  "a" : "Jezioro Czerniakowskie",
+  "b" : "Łebsko",
+  "c": "Jezioro Raduńskie Dolne",
+  "d" : "Mamry",
+  "answer" : "a"
+  },
+  "76" : {
+    "tresc" : "Jeziorem lessowym jest: ",
+    "a" : "Jezioro Czerniakowskie",
+    "b" : "Jezioro na polesiu lubelskim",
+    "c": "Jezioro Raduńskie Dolne",
+    "d" : "Mamry",
+    "answer" : "b"
   }
 }
