@@ -334,5 +334,29 @@
     "c": "3:7",
     "d" : "2:3",
     "answer" : "c"
+  },
+  "43" : {
+    "tresc" : "Ile wynosi retencja wody w Polsce?",
+    "a" : "113km^3",
+    "b" : "58km^3",
+    "c": "110km^3",
+    "d" : "104km^3",
+    "answer" : "a"
+  },
+  "44" : {
+    "tresc" : "Ile wynosi retencja wody powierzchniowej w Polsce?",
+    "a" : "33%",
+    "b" : "58%",
+    "c": "74%",
+    "d" : "86%",
+    "answer" : "a"
+  },
+  "45" : {
+    "tresc" : "Ile wynosi retencja wody gruntowej w Polsce?",
+    "a" : "67%",
+    "b" : "58%",
+    "c": "71%",
+    "d" : "86%",
+    "answer" : "a"
   }
 }
