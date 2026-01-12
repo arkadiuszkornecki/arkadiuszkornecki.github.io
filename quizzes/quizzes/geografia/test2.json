@@ -752,7 +752,7 @@
     "answer" : "d"
   },
   "95" : {
-    "tresc" : "Ile trwa tzw. \"stan spokojnego falowania\" Morza Bałtyckiego?",
+    "tresc" : "Ile trwa tzw.\"stan spokojnego falowania\" Morza Bałtyckiego?",
     "a" : ">270dni",
     "b" : "135-200dni",
     "c": "<100 dni",
