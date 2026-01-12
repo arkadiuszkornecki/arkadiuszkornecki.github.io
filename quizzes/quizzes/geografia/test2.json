@@ -358,5 +358,157 @@
     "c": "71%",
     "d" : "86%",
     "answer" : "a"
+  },
+  "46" : {
+    "tresc" : "Ile w Polsce występuje jezior?",
+    "a" : "7100",
+    "b" : "5200",
+    "c": "3600",
+    "d" : "6500",
+    "answer" : "a"
+  },
+  "47" : {
+    "tresc" : "Ile procent Polski zajmują jeziora?",
+    "a" : "6%",
+    "b" : "4%",
+    "c": "2%",
+    "d" : "1%",
+    "answer" : "d"
+  },
+  "48" : {
+    "tresc" : "Największe jezioro w Polsce to: ",
+    "a" : "Mamry",
+    "b" : "Łebsko",
+    "c": "Hańcza",
+    "d" : "Śniardwy",
+    "answer" : "d"
+  },
+  "49" : {
+    "tresc" : "Najgłębsze jezioro w Polsce to: ",
+    "a" : "Mamry",
+    "b" : "Wielki Staw",
+    "c": "Hańcza",
+    "d" : "Śniardwy",
+    "answer" : "c"
+  },
+  "50" : {
+    "tresc" : "Ile procent jezior w Polsce znajduje się na Pojezierzu Pomorskim?",
+    "a" : "35%",
+    "b" : "73%",
+    "c": "48%",
+    "d" : "59%",
+    "answer" : "c"
+  },
+  "51" : {
+    "tresc" : "Gdzie występuje Hańcza i Świardwy?",
+    "a" : "Na Pojezierzu Pomorskim",
+    "b" : "Na Pojezierzu Wielkopolskim",
+    "c": "Na Pojezierzu Mazurskim",
+    "d" : "W Tatrach",
+    "answer" : "c"
+  },
+  "52" : {
+    "tresc" : "Ile procent jezior w Polsce ma pochodzenie polodowcowe?",
+    "a" : "80%",
+    "b" : "60%",
+    "c": "92%",
+    "d" : "56%",
+    "answer" : "a"
+  },
+  "53" : {
+    "tresc" : "Jeziora cyrkowe to inaczej:",
+    "a" : "Karowe",
+    "b" : "Przymorskie",
+    "c": "Morenowe",
+    "d" : "Deltowe",
+    "answer" : "a"
+  },
+  "54" : {
+    "tresc" : "Jeziora przybrzeżne to inaczej:",
+    "a" : "Cyrkowe",
+    "b" : "Przymorskie",
+    "c": "Rynnowe",
+    "d" : "Deltowe",
+    "answer" : "b"
+  },
+  "55" : {
+    "tresc" : "W jaki sposób powstały jeziora morenowe?",
+    "a" : "Utworzyły się w obniżeniach terenu, pomiędzy wzniesieniami moren czołowych i zagłębieniach moren dennych",
+    "b" : "Powstały przez wypełnienie wodą gruntową przybrzeżnych zagłębień, a następnie odcięcie ich przez piaszczyste mierzeje",
+    "c": "Powstały wskutek erozyjnej działalności wód podlodowcowych",
+    "d" : "Powstały w wyniku zderzenia meteorytu z gorącą płynną lawą",
+    "answer" : "a"
+  },
+  "56" : {
+    "tresc" : "Co to są jeziora morenowe?",
+    "a" : "Jeziora o znacznej powierzchni, urozmaiconej linii brzegowej, mające liczne zatoki i półwyspy",
+    "b" : "Jeziora o znacznej powierzchni, ale ich głębokość jest niewielka",
+    "c": "Jeziora wąskie i wydłużone, mają duże spadki dna i osiągają znaczne głębokości",
+    "d" : "Jeziora płytkie, mają niskie, bagniste brzegi",
+    "answer" : "a"
+  },
+  "57" : {
+    "tresc" : "W jaki sposób powstały jeziora przybrzeżne?",
+    "a" : "Utworzyły się w obniżeniach terenu, pomiędzy wzniesieniami moren czołowych i zagłębieniach moren dennych",
+    "b" : "Powstały przez wypełnienie wodą gruntową przybrzeżnych zagłębień, a następnie odcięcie ich przez piaszczyste mierzeje",
+    "c": "Powstały wskutek erozyjnej działalności wód podlodowcowych",
+    "d" : "Powstały w wyniku zderzenia meteorytu z gorącą płynną lawą",
+    "answer" : "b"
+  },
+  "58" : {
+    "tresc" : "Co to są jeziora przymorskie?",
+    "a" : "Jeziora o znacznej powierzchni, urozmaiconej linii brzegowej, mające liczne zatoki i półwyspy",
+    "b" : "Jeziora o znacznej powierzchni, ale ich głębokość jest niewielka",
+    "c": "Jeziora wąskie i wydłużone, mają duże spadki dna i osiągają znaczne głębokości",
+    "d" : "Jeziora płytkie, mają niskie, bagniste brzegi",
+    "answer" : "b"
+  },
+  "59" : {
+    "tresc" : "W jaki sposób powstały jeziora rynnowe?",
+    "a" : "Utworzyły się w obniżeniach terenu, pomiędzy wzniesieniami moren czołowych i zagłębieniach moren dennych",
+    "b" : "Powstały przez wypełnienie wodą gruntową przybrzeżnych zagłębień, a następnie odcięcie ich przez piaszczyste mierzeje",
+    "c": "Powstały wskutek erozyjnej działalności wód podlodowcowych",
+    "d" : "Powstały w wyniku zderzenia meteorytu z gorącą płynną lawą",
+    "answer" : "c"
+  },
+  "60" : {
+    "tresc" : "Co to są jeziora rynnowe?",
+    "a" : "Jeziora o znacznej powierzchni, urozmaiconej linii brzegowej, mające liczne zatoki i półwyspy",
+    "b" : "Jeziora o znacznej powierzchni, ale ich głębokość jest niewielka",
+    "c": "Jeziora wąskie i wydłużone, mają duże spadki dna i osiągają znaczne głębokości",
+    "d" : "Jeziora płytkie, mają niskie, bagniste brzegi",
+    "answer" : "c"
+  },
+  "61" : {
+    "tresc" : "W jaki sposób powstały jeziora karowe?",
+    "a" : "Utworzyły się w obniżeniach terenu, pomiędzy wzniesieniami moren czołowych i zagłębieniach moren dennych",
+    "b" : "Powstały przez wypełnienie wodą gruntową przybrzeżnych zagłębień, a następnie odcięcie ich przez piaszczyste mierzeje",
+    "c": "Powstały wskutek erozyjnej działalności wód podlodowcowych",
+    "d" : "Powstały w wyniku wypełnienia wodą górkich cyrków polodowcowych",
+    "answer" : "d"
+  },
+  "62" : {
+    "tresc" : "Co to są jeziora cyrkowe?",
+    "a" : "Jeziora o owalnym kształcie, charakteryzują się znacznym spadkiem i dużymi głębokościami",
+    "b" : "Jeziora o znacznej powierzchni, ale ich głębokość jest niewielka",
+    "c": "Jeziora wąskie i wydłużone, mają duże spadki dna i osiągają znaczne głębokości",
+    "d" : "Jeziora płytkie, mają niskie, bagniste brzegi",
+    "answer" : "a"
+  },
+  "63" : {
+    "tresc" : "W jaki sposób powstały jeziora deltowe?",
+    "a" : "Utworzyły się w obniżeniach terenu, pomiędzy wzniesieniami moren czołowych i zagłębieniach moren dennych",
+    "b" : "Powstały przez wypełnienie wodą niewielkich zagłębień w obrębie delt rzecznych",
+    "c": "Powstały wskutek erozyjnej działalności wód podlodowcowych",
+    "d" : "Powstały w wyniku zderzenia meteorytu z gorącą płynną lawą",
+    "answer" : "b"
+  },
+  "64" : {
+    "tresc" : "Co to są jeziora morenowe?",
+    "a" : "Jeziora o znacznej powierzchni, urozmaiconej linii brzegowej, mające liczne zatoki i półwyspy",
+    "b" : "Jeziora o znacznej powierzchni, ale ich głębokość jest niewielka",
+    "c": "Jeziora wąskie i wydłużone, mają duże spadki dna i osiągają znaczne głębokości",
+    "d" : "Jeziora płytkie, mają niskie bagniste brzegi",
+    "answer" : "d"
   }
 }
