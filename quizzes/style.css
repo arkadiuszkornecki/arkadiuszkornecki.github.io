@@ -71,15 +71,11 @@ footer {
 .subjects {
     font-weight: bold;
     font-size: 1.5rem;
-
     cursor: pointer;
-
     text-align: center;
-
     width: 100%;
     padding: 15px;
     margin: 5px;
-
     border-radius: 5px;
     background: none;
     color: var(--secondary-color);
@@ -96,15 +92,11 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     font-family: var(--primary-font), serif;
     font-size: 1.5rem;
-
     background-color: var(--secondary-bg-color);
-
     width: 200px;
     height: 200px;
-
     border-radius: 5px;
     cursor: pointer;
     user-select: none;
