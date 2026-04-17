@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lexend+Deca:wght@100..900&display=swap');
-@import "tailwindcss";
 
 * {
     margin: 0;
@@ -8,13 +7,13 @@
     box-sizing: border-box;
 }
 
-@theme {
-    --color-primary-bg: #111827;
-    --color-secondary-bg: #020617;
-    --color-primary: #EAB308;
-    --color-secondary: #F3F4F6;
-    --color-third: #9CA3AF;
-    --color-fourth: #1F2937;
+:root {
+    --primary-bg-color: #111827;
+    --secondary-bg-color: #020617;
+    --primary-color: #EAB308;
+    --secondary-color: #F3F4F6;
+    --third-color: #9CA3AF;
+    --fourth-color: #1F2937;
     --primary-font: "Lexend Deca", serif;
     --secondary-font: "Arvo", serif;
 }
@@ -26,13 +25,13 @@ html {
 
 body {
     display: flex;
-    background-color: var(--color-primary-bg);
+    background-color: var(--primary-bg-color);
     font-family: var(--primary-font), serif;
 }
 
 #nav-bar {
     display: flex;
-    background-color: var(--color-secondary-bg);
+    background-color: var(--secondary-bg-color);
     height: 150px;
     width: 100vw;
     align-items: center;
@@ -65,7 +64,7 @@ body {
 .burger span {
     width: 100%;
     height: 0.3rem;
-    background-color: var(--color-primary);
+    background-color: var(--primary-color);
     border-radius: 0.5rem;
     transition: all 0.3s ease-in-out;
 }
@@ -75,7 +74,7 @@ body {
 }
 
 .burger.active > span {
-    background-color: var(--color-primary);
+    background-color: var(--primary-color);
 }
 
 .burger.active > span:nth-child(1) {
@@ -106,7 +105,7 @@ body {
     position: absolute;
     right: 0;
     top: 25%;
-    background-color: var(--color-secondary-bg);
+    background-color: var(--secondary-bg-color);
     border-radius: 50px 0 0 50px;
 }
 
@@ -124,13 +123,13 @@ body {
 
 #nav-bar ul li a {
     text-decoration: none;
-    color: var(--color-third);
+    color: var(--third-color);
     font-size: 40px;
     margin: 0;
 }
 
 #nav-bar ul li a:hover {
-    color: var(--color-secondary);
+    color: var(--secondary-color);
 }
 
 .contact_us_home a {
@@ -151,7 +150,7 @@ body {
     height: 1500px;
     flex-direction: column;
     align-items: center;
-    background-color: var(--color-primary-bg);
+    background-color: var(--primary-bg-color);
 }
 
 #img_photo {
@@ -188,23 +187,23 @@ body {
     height: 100px;
     font-size: 30px;
     border-radius: 5px;
-    background-color: var(--color-primary);
+    background-color: var(--primary-color);
     font-weight: bold;
     cursor: pointer;
 }
 
 #home #about h4 {
-    color: var(--color-primary);
+    color: var(--primary-color);
     font-size: 35px;
 }
 
 #home #about h1 {
-    color: var(--color-secondary);
+    color: var(--secondary-color);
     font-size: 60px;
 }
 
 #home #about p {
-    color: var(--color-third);
+    color: var(--third-color);
     font-size: 30px;
 }
 
@@ -216,7 +215,7 @@ body {
     display: flex;
     width: 100vw;
     height: 1500px;
-    background-color: var(--color-secondary-bg);
+    background-color: var(--secondary-bg-color);
     flex-direction: column;
     align-items: center;
 }
@@ -242,7 +241,7 @@ body {
 
 #aboutme #img #image_border {
     display: flex;
-    border: 20px solid var(--color-primary);
+    border: 20px solid var(--primary-color);
     border-radius: 5%;
     width: 550px;
     height: 550px;
@@ -261,7 +260,7 @@ body {
 }
 
 #aboutme #description h1 {
-    color: var(--color-secondary);
+    color: var(--secondary-color);
     font-size: 60px;
 }
 
@@ -270,7 +269,7 @@ body {
 }
 
 #aboutme #description p {
-    color: var(--color-third);
+    color: var(--third-color);
     font-size: 30px;
 }
 
@@ -286,7 +285,7 @@ body {
     flex-direction: column;
     width: 100vw;
     height: 2000px;
-    background-color: var(--color-primary-bg);
+    background-color: var(--primary-bg-color);
 }
 
 #service #service_title {
@@ -300,7 +299,7 @@ body {
 
 #service #service_title h1 {
     position: relative;
-    color: var(--color-secondary);
+    color: var(--secondary-color);
     font-size: 60px;
 }
 
@@ -316,7 +315,7 @@ body {
 .service_item {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-secondary-bg);
+    background-color: var(--secondary-bg-color);
     height: 488px;
     width: 550px;
     border-radius: 20px;
@@ -324,24 +323,27 @@ body {
     justify-content: center;
 }
 
+.service_item * {
+    margin: 25px 0;
+}
 
 .service_item i {
     display: flex;
     width: 100%;
     justify-content: center;
     font-size: 60px;
-    color: var(--color-primary);
+    color: var(--primary-color);
     margin-top: 40px;
 }
 
 .service_item h3 {
-    color: var(--color-secondary);
+    color: var(--secondary-color);
     font-size: 40px;
     text-align: center;
 }
 
 .service_item p {
-    color: var(--color-third);
+    color: var(--third-color);
     font-size: 30px;
     text-align: center;
 }
@@ -353,7 +355,7 @@ body {
     flex-direction: column;
     width: 100vw;
     height: 1500px;
-    background-color: var(--color-secondary-bg);
+    background-color: var(--secondary-bg-color);
 }
 
 #experiences #experiences_title {
@@ -368,7 +370,7 @@ body {
     left: 200px;
     top: 50px;
     font-family: var(--secondary-font), serif;
-    color: var(--color-secondary);
+    color: var(--secondary-color);
     font-size: 60px;
 }
 
@@ -391,23 +393,23 @@ body {
 }
 
 .experience h5 {
-    color: var(--color-secondary);
+    color: var(--secondary-color);
     font-weight: 300;
     font-size: 30px;
 }
 
 .experience h1 {
-    color: var(--color-primary);
+    color: var(--primary-color);
     font-size: 40px;
 }
 
 .experience h6 {
-    color: var(--color-secondary);
+    color: var(--secondary-color);
     font-size: 30px;
 }
 
 .experience p {
-    color: var(--color-third);
+    color: var(--third-color);
     font-size: 30px;
     margin-left: 10px;
 }
@@ -419,7 +421,7 @@ body {
     flex-direction: column;
     width: 100vw;
     height: 1500px;
-    background-color: var(--color-primary-bg);
+    background-color: var(--primary-bg-color);
 }
 
 #contact #contact_title {
@@ -433,7 +435,7 @@ body {
 
 #contact #contact_title h1 {
     font-family: var(--primary-font), serif;
-    color: var(--color-secondary);
+    color: var(--secondary-color);
     font-size: 67px;
 }
 
@@ -459,15 +461,15 @@ body {
     height: 100%;
     justify-content: center;
     align-items: center;
-    border: 10px solid var(--color-primary);
+    border: 10px solid var(--primary-color);
     border-radius: 20px;
     text-decoration: none;
-    color: var(--color-primary);
+    color: var(--primary-color);
 }
 
 .contact_method a:hover {
-    border-color: var(--color-secondary);
-    color: var(--color-secondary);
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 .contact_method i {
@@ -481,13 +483,13 @@ body {
     display: flex;
     width: 100vw;
     height: 250px;
-    background-color: var(--color-secondary-bg);
+    background-color: var(--secondary-bg-color);
     align-items: center;
     justify-content: center;
 }
 
 #footer_items a{
-    color: var(--color-third);
+    color: var(--third-color);
     font-size: 60px;
     margin: 20px;
 }
@@ -512,7 +514,7 @@ body {
         height: 100%;
         right: 0;
         top: 0;
-        background-color: var(--color-secondary-bg);
+        background-color: var(--secondary-bg-color);
     }
 
 
@@ -574,17 +576,17 @@ body {
     }
 
     #home #about h4 {
-        color: var(--color-primary);
+        color: var(--primary-color);
         font-size: 16px;
     }
 
     #home #about h1 {
-        color: var(--color-secondary);
+        color: var(--secondary-color);
         font-size: 42px;
     }
 
     #home #about p {
-        color: var(--color-third);
+        color: var(--third-color);
         font-size: 16px;
     }
 
@@ -789,7 +791,7 @@ body {
         justify-content: center;
         align-items: center;
         border-radius: 10px;
-        border: 5px solid var(--color-primary);
+        border: 5px solid var(--primary-color);
     }
 
     .contact_method i {

@@ -1,0 +1,82 @@
+{
+  "1": {
+    "tresc": "Która organella komórkowa jest odpowiedzialna za produkcję energii?",
+    "a": "Mitochondrium",
+    "b": "Chloroplast",
+    "c": "Jądro komórkowe",
+    "d": "Rybosomy",
+    "answer": "a"
+  },
+  "2": {
+    "tresc": "Ile chromosomów ma prawidłowa komórka somatyczna człowieka?",
+    "a": "23",
+    "b": "46",
+    "c": "48",
+    "d": "92",
+    "answer": "b"
+  },
+  "3": {
+    "tresc": "Który proces zachodzi w chloroplastach?",
+    "a": "Oddychanie komórkowe",
+    "b": "Fotosynteza",
+    "c": "Fermentacja",
+    "d": "Mitoza",
+    "answer": "b"
+  },
+  "4": {
+    "tresc": "Która grupa krwi jest dawcą uniwersalnym?",
+    "a": "A",
+    "b": "B",
+    "c": "AB",
+    "d": "0",
+    "answer": "d"
+  },
+  "5": {
+    "tresc": "Jak nazywa się proces podziału komórki, w którym powstają komórki płciowe?",
+    "a": "Mitoza",
+    "b": "Mejoza",
+    "c": "Cytokineza",
+    "d": "Amitoza",
+    "answer": "b"
+  },
+  "6": {
+    "tresc": "Który układ odpowiada za transport tlenu i substancji odżywczych w organizmie?",
+    "a": "Układ nerwowy",
+    "b": "Układ pokarmowy",
+    "c": "Układ krążenia",
+    "d": "Układ moczowy",
+    "answer": "c"
+  },
+  "7": {
+    "tresc": "Jaką cząsteczkę tworzy DNA?",
+    "a": "Białko",
+    "b": "Tłuszcz",
+    "c": "Kwas nukleinowy",
+    "d": "Węglowodan",
+    "answer": "c"
+  },
+  "8": {
+    "tresc": "Który hormon reguluje poziom glukozy we krwi?",
+    "a": "Adrenalina",
+    "b": "Insulina",
+    "c": "Testosteron",
+    "d": "Estrogen",
+    "answer": "b"
+  },
+  "9": {
+    "tresc": "Która część rośliny odpowiada za pobieranie wody i minerałów z gleby?",
+    "a": "Liść",
+    "b": "Łodyga",
+    "c": "Korzeń",
+    "d": "Kwiat",
+    "answer": "c"
+  },
+  "10": {
+    "tresc": "Jak nazywa się proces wymiany gazowej w płucach?",
+    "a": "Dyfuzja",
+    "b": "Osmoza",
+    "c": "Filtracja",
+    "d": "Transport aktywny",
+    "answer": "a"
+  }
+}
