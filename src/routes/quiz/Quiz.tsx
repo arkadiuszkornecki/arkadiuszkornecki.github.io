@@ -111,14 +111,15 @@ export default function QuizApp() {
     }, [selectedSubject]);
 
     useEffect(() => {
-        if (!selectedSubject || !quiz || !quizData) {
-            setQuestions([]);
-            setCurrentQuestion(0);
-            setSelectedAnswer(null);
-            setScore(0);
-            setUserAnswers({});
-            setShowSummary(false);
-            setShowAnswers(false);
+        (async () => {
+            if (!selectedSubject || !quiz || !quizData) {
+                setQuestions([]);
+                setCurrentQuestion(0);
+                setSelectedAnswer(null);
+                setScore(0);
+                setUserAnswers({});
+                setShowSummary(false);
+                setShowAnswers(false);
             return;
         }
 
@@ -129,6 +130,7 @@ export default function QuizApp() {
         setUserAnswers({});
         setShowSummary(false);
         setShowAnswers(false);
+        })();
     }, [quiz, quizData, selectedSubject]);
 
     const currentQuestionData = questions[currentQuestion];
