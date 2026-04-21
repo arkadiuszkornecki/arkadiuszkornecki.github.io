@@ -160,6 +160,7 @@ export default function QuizApp() {
             return;
         }
 
+        document.title = "Arkadiusz Kornecki";
         navigate("/");
     }
 
