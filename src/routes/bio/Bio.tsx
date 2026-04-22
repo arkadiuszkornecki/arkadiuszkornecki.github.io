@@ -50,9 +50,8 @@ export default function Bio() {
             </div>
             <div id="aboutme">
                 <div id="img">
-                    <div id="image_border">
-                        <img src={profileLogo} alt="photo"/>
-                    </div>
+                    <div id="image_border"></div>
+                    <img src={profileLogo} alt="photo"/>
                 </div>
                 <div id="description">
                     <h1 className="font-bold">About <span className="text-primary">Me</span></h1>
@@ -116,7 +115,7 @@ export default function Bio() {
             </div>
             <div id="contact">
                 <div id="contact_title">
-                    <h1 className="font-bold">Contact <span className="text-primary">Me</span></h1>
+                    <h1 className="font-bold">Contact <span className="text-primary ">Me</span></h1>
                 </div>
                 <div id="contact_section">
                     <div className="contact_method">

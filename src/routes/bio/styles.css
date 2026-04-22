@@ -28,20 +28,20 @@ body {
 }
 
 #nav-bar {
-    @apply flex  bg-secondary-bg h-37.5 w-screen items-center;
+    @apply flex bg-secondary-bg h-28 w-screen items-center justify-between;
 }
 
 #nav-bar img {
-    @apply w-50;
+    @apply w-35;
 }
 
 
 #nav-bar a {
-    @apply ml-37.5;
+    @apply ml-10;
 }
 
 .burger {
-    @apply flex w-20 h-20 flex-col justify-around bg-transparent border-none items-end cursor-pointer relative transition-all duration-300 ease-in-out left-3/6;
+    @apply relative flex w-15 h-15 right-5 flex-col justify-around bg-transparent border-none items-end cursor-pointer transition-all duration-300 ease-in-out;
 }
 
 .burger span {
@@ -57,7 +57,7 @@ body {
 }
 
 .burger.active > span:nth-child(1) {
-    @apply translate-y-4 rotate-[-44deg] w-full;
+    @apply translate-y-2 rotate-[-44deg] w-full;
 }
 
 .burger.active > span:nth-child(2) {
@@ -77,7 +77,7 @@ body {
 }
 
 .menu {
-    @apply hidden h-300 absolute right-0 top-1/4 bg-secondary-bg rounded-[50px_0_0_50px];
+    @apply hidden h-150 absolute right-0 top-40 bg-secondary-bg rounded-[50px_0_0_50px];
 }
 
 .menu.open {
@@ -85,91 +85,83 @@ body {
 }
 
 #nav-bar ul {
-    @apply flex flex-col items-center list-none;
+    @apply flex flex-col items-center list-none justify-between p-10;
 }
 
 #nav-bar ul li {
-    @apply flex m-17.5;
+    @apply flex;
 }
 
 #nav-bar ul li a {
-    @apply no-underline text-third text-[40px] m-0;
+    @apply no-underline text-third text-[25px] m-0;
 }
 
 #nav-bar ul li a:hover {
     @apply text-secondary;
 }
 
-.contact_us_home a {
-    @apply flex no-underline text-black w-full h-full justify-center items-center;
-}
-
 /* HOME [DIV-SECTION] */
 
 #home {
-    @apply flex w-screen h-375 flex-col items-center bg-primary-bg;
+    @apply flex w-screen flex-col items-center bg-primary-bg;
 }
 
 #img_photo {
-    @apply flex w-full h-full items-center justify-center;
+    @apply flex w-full items-center justify-center h-full py-10;
 }
 
 #img_photo img {
-    @apply w-137.5 h-137.5 rounded-[5%] mt-[25%];
+    @apply w-90 h-90 rounded-[5%];
 }
 
 #home #about {
-    @apply flex flex-col h-full mt-[15%];
-}
-
-#home #about * {
-    @apply m-[20px_0];
+    @apply flex flex-col h-full justify-between gap-y-6 px-6 py-10;
 }
 
 .contact_us_home {
-    @apply flex justify-center items-center w-75 h-25 text-[30px] rounded-[5px] bg-primary font-bold cursor-pointer;
+    @apply flex justify-center items-center w-46 h-14 text-[18px] rounded-[5px] bg-primary font-bold cursor-pointer;
 }
 
 #home #about h4 {
-    @apply text-primary text-[35px];
+    @apply text-primary text-[26px];
 }
 
 #home #about h1 {
-    @apply text-secondary text-[60px];
+    @apply text-secondary text-[40px];
 }
 
 #home #about p {
-    @apply text-third text-[30px];
+    @apply text-third text-[20px];
+}
+
+.contact_us_home a {
+    @apply flex no-underline text-black w-full h-full justify-center items-center;
 }
 
 /* ABOUTME [DIV-SECTION] */
 
 #aboutme {
-    @apply flex w-screen h-375 bg-secondary-bg flex-col items-center;
+    @apply flex w-screen bg-secondary-bg flex-col items-center p-10;
 }
 
 #aboutme #img {
-    @apply flex w-full h-full items-center justify-center mt-[15%];
+    @apply flex items-center justify-center mt-[15%] p-10 relative w-full aspect-square;
 }
 
-#image_border img {
-    @apply relative rounded-[5%] -scale-x-100 max-w-137.5 h-137.5 left-6.25 bottom-12.5;
+#img img {
+    @apply rounded-2xl -scale-x-100 aspect-square absolute w-[80%] -translate-y-6 translate-x-6;
 }
 
 #aboutme #img #image_border {
-    @apply flex border-20 border-primary rounded-[5%] w-137.5 h-137.5;
+    @apply flex border-20 border-primary rounded-2xl aspect-square absolute w-[80%];
 }
 
 #aboutme #description {
-    @apply flex flex-col w-full h-full justify-center;
-}
-
-#aboutme #description * {
-    @apply m-[25px_100px];
+    @apply flex flex-col justify-center gap-10;
 }
 
 #aboutme #description h1 {
-    @apply text-secondary text-[60px];
+    @apply text-secondary text-[46px];
 }
 
 #aboutme #description h1 span {
@@ -177,7 +169,7 @@ body {
 }
 
 #aboutme #description p {
-    @apply text-third text-[30px];
+    @apply text-third text-[20px];
 }
 
 #aboutme #description button a {
@@ -188,99 +180,99 @@ body {
 /* SERVICE [DIV SECTION] */
 
 #service {
-    @apply flex flex-col w-screen h-500 bg-primary-bg;
+    @apply flex flex-col w-screen bg-primary-bg py-10;
 }
 
 #service #service_title {
-    @apply flex flex-col w-screen h-50 justify-end items-center;
+    @apply flex flex-col w-screen  justify-end items-center py-10;
 }
 
 #service #service_title h1 {
-    @apply relative text-secondary text-[60px];
+    @apply relative text-secondary text-[46px];
 }
 
 #service #service_section {
-    @apply flex flex-col w-screen h-full justify-evenly items-center;
+    @apply flex flex-col w-screen h-full justify-evenly items-center gap-10;
 }
 
 .service_item {
-    @apply flex flex-col bg-secondary-bg h-122 w-137.5 rounded-[20px] items-center justify-center;
+    @apply flex flex-col bg-secondary-bg rounded-[20px] items-center justify-center gap-3 p-5 max-w-95;
 }
 
 
 .service_item i {
-    @apply flex w-full justify-center text-[60px] text-primary mt-10;
+    @apply flex w-full justify-center text-[46px] text-primary mt-10;
 }
 
 .service_item h3 {
-    @apply text-secondary text-[40px] text-center;
+    @apply text-secondary text-[30px] text-center;
 }
 
 .service_item p {
-    @apply text-third text-[30px] text-center;
+    @apply text-third text-[20px] text-center;
 }
 
 /* EXPERIENCE [DIV SECTION] */
 
 #experiences {
-    @apply flex flex-col w-screen h-375 bg-secondary-bg;
+    @apply flex flex-col w-screen bg-secondary-bg py-10;
 }
 
 #experiences #experiences_title {
-    @apply flex w-screen h-100 items-center;
+    @apply flex w-screen items-center justify-center;
 }
 
 #experiences #experiences_title h1 {
-    @apply relative left-50 top-12.5 text-secondary text-[60px];
+    @apply flex relative text-secondary justify-center items-center h-40 text-[46px];
     font-family: var(--secondary-font), serif;
 }
 
 #experiences #experiences_section {
-    @apply flex flex-col w-screen h-full justify-evenly items-center;
+    @apply flex flex-col w-screen justify-evenly items-center gap-10;
 }
 
 .experience {
-    @apply flex flex-col justify-evenly w-125 h-77;
+    @apply flex flex-col justify-evenly max-w-58.25;
 
 }
 
 .experience h5 {
-    @apply text-secondary font-light text-[30px];
+    @apply text-secondary font-light text-[20px];
 }
 
 .experience h1 {
-    @apply text-primary text-[40px];
+    @apply text-primary text-[30px];
 }
 
 .experience h6 {
-    @apply text-secondary text-[30px];
+    @apply text-secondary text-[20px];
 }
 
 .experience p {
-    @apply text-third text-[30px] ml-2.5;
+    @apply text-third text-[20px] ml-2.5;
 }
 
 /* CONTACT [DIV SECTION] */
 
 #contact {
-    @apply flex flex-col w-screen h-375 bg-primary-bg;
+    @apply flex flex-col w-screen bg-primary-bg py-10;
 }
 
 #contact #contact_title {
-    @apply flex flex-col w-screen h-100 items-center justify-center;
+    @apply flex flex-col w-screen items-center justify-center;
 }
 
 #contact #contact_title h1 {
-    @apply text-secondary text-[67px];
+    @apply text-secondary text-[42px] p-14 justify-center items-center;
     font-family: var(--primary-font), serif;
 }
 
 #contact #contact_section {
-    @apply flex flex-col w-screen h-full justify-evenly items-center;
+    @apply flex flex-col w-screen justify-evenly items-center gap-20;
 }
 
 .contact_method {
-    @apply flex w-112.5 h-112.5 rounded-[10px];
+    @apply flex w-80 h-80 rounded-[10px];
 }
 
 .contact_method a {
@@ -298,11 +290,15 @@ body {
 /* FOOTER [DIV SECTION] */
 
 #footer {
-    @apply flex w-screen h-62.5 bg-secondary-bg justify-center items-center ;
+    @apply flex w-screen bg-secondary-bg justify-center items-center p-10;
+}
+
+#footer_items {
+    @apply flex gap-5;
 }
 
 #footer_items a{
-    @apply text-third text-[60px] m-5;
+    @apply text-third text-[36px];
 }
 
 
@@ -330,7 +326,7 @@ body {
     }
 
     #nav-bar ul {
-        @apply flex-row items-center;
+        @apply flex-row items-center p-0;
     }
 
     #nav-bar ul li {
@@ -355,7 +351,7 @@ body {
     }
 
     #home #about {
-        @apply flex h-full w-1/2 justify-center ml-50 mt-0;
+        @apply flex h-full w-1/2 justify-center ml-50 mt-0 gap-y-0;
     }
 
     #home #about * {
@@ -384,19 +380,19 @@ body {
     }
 
     #aboutme #img {
-        @apply w-1/2 h-full mt-0;
+        @apply flex items-center justify-center mt-0 p-10 relative w-full aspect-square;
     }
 
-    #image_border img {
-        @apply w-106.75 h-106.75 left-6.25 bottom-12.5;
+    #img img {
+        @apply rounded-2xl -scale-x-100 aspect-square absolute w-[50%];
     }
 
     #aboutme #img #image_border {
-        @apply rounded-[5%] w-106.75 h-106.75;
+        @apply flex border-20 border-primary rounded-2xl aspect-square absolute w-[50%];
     }
 
     #aboutme #description {
-        @apply w-1/2 h-full;
+        @apply w-full h-full;
     }
 
     #aboutme #description h1 {
@@ -405,10 +401,6 @@ body {
 
     #aboutme #description p {
         @apply text-[20px] w-[65%];
-    }
-
-    #aboutme #description * {
-        @apply m-[25px_0];
     }
 
     /* SERVICE */
@@ -456,7 +448,7 @@ body {
     }
 
     #experiences #experiences_title {
-        @apply w-screen h-50 items-center;
+        @apply w-screen h-50 items-start justify-start;
     }
 
     #experiences #experiences_title h1 {
@@ -490,7 +482,7 @@ body {
     /* CONTACT */
 
     #contact {
-        @apply flex-col w-screen h-166;
+        @apply flex-col w-screen;
     }
 
     #contact #contact_title {
