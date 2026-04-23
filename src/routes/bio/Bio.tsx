@@ -1,6 +1,7 @@
 import './styles.css'
 import "tailwindcss"
 import {Link} from "react-router-dom"
+import { HashLink } from 'react-router-hash-link';
 
 import {Database, PanelTop, Code, Mail, Globe} from "lucide-react"
 
@@ -23,11 +24,11 @@ export default function Bio() {
                 <a href="https://arkadiuszkornecki.github.io/"><img src={smallLogo} alt="logo"/></a>
                 <div id="menu" className={menuOpen ? "menu open" : "menu"}>
                     <ul>
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#aboutme">ABOUT</a></li>
-                        <li><a href="#service">SERVICE</a></li>
-                        <li><a href="#experiences">EXPERIENCE</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><HashLink to="#home">HOME</HashLink></li>
+                        <li><HashLink to="#aboutme">ABOUT</HashLink></li>
+                        <li><HashLink to="#service">SERVICE</HashLink></li>
+                        <li><HashLink to="#experiences">EXPERIENCE</HashLink></li>
+                        <li><HashLink to="#contact">CONTACT</HashLink></li>
                         <li><Link to={"/quiz"}>QUIZZES</Link></li>
                     </ul>
                 </div>
