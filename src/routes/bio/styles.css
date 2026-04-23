@@ -57,11 +57,11 @@ body {
 }
 
 .burger.active > span:nth-child(1) {
-    @apply translate-y-2 rotate-[-44deg] w-full;
+    @apply translate-y-3.5 -rotate-44 w-full;
 }
 
 .burger.active > span:nth-child(2) {
-    @apply -translate-y-6 rotate-44 w-full;
+    @apply -translate-y-4 rotate-44 w-full;
 }
 
 .burger.active > span:nth-child(3) {

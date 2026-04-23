@@ -24,11 +24,11 @@ export default function Bio() {
                 <a href="https://arkadiuszkornecki.github.io/"><img src={smallLogo} alt="logo"/></a>
                 <div id="menu" className={menuOpen ? "menu open" : "menu"}>
                     <ul>
-                        <li><HashLink to="#home">HOME</HashLink></li>
-                        <li><HashLink to="#aboutme">ABOUT</HashLink></li>
-                        <li><HashLink to="#service">SERVICE</HashLink></li>
-                        <li><HashLink to="#experiences">EXPERIENCE</HashLink></li>
-                        <li><HashLink to="#contact">CONTACT</HashLink></li>
+                        <li><HashLink to="#home" onClick={() => setMenuOpen(false)}>HOME</HashLink></li>
+                        <li><HashLink to="#aboutme" onClick={() => setMenuOpen(false)}>ABOUT</HashLink></li>
+                        <li><HashLink to="#service" onClick={() => setMenuOpen(false)}>SERVICE</HashLink></li>
+                        <li><HashLink to="#experiences" onClick={() => setMenuOpen(false)}>EXPERIENCE</HashLink></li>
+                        <li><HashLink to="#contact" onClick={() => setMenuOpen(false)}>CONTACT</HashLink></li>
                         <li><Link to={"/quiz"}>QUIZZES</Link></li>
                     </ul>
                 </div>
