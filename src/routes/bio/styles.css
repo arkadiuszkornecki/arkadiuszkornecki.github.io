@@ -232,7 +232,7 @@ body {
 }
 
 .experience {
-    @apply flex flex-col justify-evenly max-w-58.25;
+    @apply flex flex-col justify-evenly max-w-75;
 
 }
 
