@@ -149,7 +149,7 @@ body {
 }
 
 #img img {
-    @apply rounded-2xl -scale-x-100 aspect-square absolute w-[80%] -translate-y-6 translate-x-6;
+    @apply rounded-2xl -scale-x-100 aspect-square absolute w-[80%] -translate-y-10 translate-x-10;
 }
 
 #aboutme #img #image_border {
