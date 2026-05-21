@@ -3,19 +3,31 @@ import "./styles.css";
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
-type AnswerKey = "a" | "b" | "c" | "d";
+type AnswerKey = "a" | "b" | "c" | "d" | "e";
+
+type RawAnswer =
+    | string
+    | {
+    text?: string;
+    image?: string;
+    alt?: string;
+};
 
 type Answer = {
     key: AnswerKey;
-    text: string;
+    text?: string;
+    image?: string;
+    alt?: string;
 };
 
 type RawQuestion = {
     tresc: string;
-    a: string;
-    b: string;
-    c: string;
-    d: string;
+    image?: string;
+    a: RawAnswer;
+    b: RawAnswer;
+    c: RawAnswer;
+    d: RawAnswer;
+    e?: RawAnswer;
     answer: AnswerKey;
 };
 
@@ -25,6 +37,7 @@ type QuizCatalog = Record<string, Record<string, string>>;
 type Question = {
     id: string;
     tresc: string;
+    image?: string;
     answers: Answer[];
     correctAnswer: AnswerKey;
 };
@@ -60,18 +73,61 @@ function getQuizData(subject: string, quiz: string) {
     return quizModules[`./quizzes/${subject}/${quiz}.json`] ?? null;
 }
 
+function buildAnswer(key: AnswerKey, rawAnswer: RawAnswer): Answer {
+    if (typeof rawAnswer === "string") {
+        return {
+            key,
+            text: rawAnswer,
+        };
+    }
+
+    return {
+        key,
+        text: rawAnswer.text,
+        image: rawAnswer.image,
+        alt: rawAnswer.alt,
+    };
+}
+
+function renderAnswerContent(answer: Answer | undefined, fallback: string) {
+    if (!answer) {
+        return fallback;
+    }
+
+    if (answer.image) {
+        return (
+            <img
+                src={answer.image}
+                alt={answer.alt ?? answer.text ?? `Odpowiedź ${answer.key}`}
+                className="max-h-32 w-full object-contain"
+            />
+        );
+    }
+
+    return answer.text;
+}
+
 function buildQuestions(quizData: RawQuiz): Question[] {
-    const questions = Object.entries(quizData).map<Question>(([id, question]) => ({
-        id,
-        tresc: question.tresc,
-        answers: shuffleArray<Answer>([
-            { key: "a", text: question.a },
-            { key: "b", text: question.b },
-            { key: "c", text: question.c },
-            { key: "d", text: question.d },
-        ]),
-        correctAnswer: question.answer,
-    }));
+    const questions = Object.entries(quizData).map<Question>(([id, question]) => {
+        const answers: Answer[] = [
+            buildAnswer("a", question.a),
+            buildAnswer("b", question.b),
+            buildAnswer("c", question.c),
+            buildAnswer("d", question.d),
+        ];
+
+        if (question.e) {
+            answers.push(buildAnswer("e", question.e));
+        }
+
+        return {
+            id,
+            tresc: question.tresc,
+            image: question.image,
+            answers: shuffleArray(answers),
+            correctAnswer: question.answer,
+        };
+    });
 
     return shuffleArray(questions).slice(0, 20);
 }
@@ -263,7 +319,7 @@ export default function QuizApp() {
 
     if (!quizData || !selectedQuizTitle) {
         return (
-            <section className="min-h-screen bg-slate-950 px-6 py-10 text-slate-100">
+            <section className="min-h-screen min-w-screen bg-slate-950 px-6 py-10 text-slate-100">
                 <div className="mx-auto flex max-w-3xl flex-col items-center gap-8 rounded-4xl border border-slate-800 bg-slate-900/80 p-10 text-center">
                     <p className="text-sm uppercase tracking-[0.35em] text-amber-400">{capitalize(selectedSubject)}</p>
                     <h1 className="text-4xl font-black sm:text-5xl">Praca w toku</h1>
@@ -367,11 +423,13 @@ export default function QuizApp() {
                                             userAnswerKey === question.correctAnswer ? "bg-green-600" : "bg-red-600"
                                         }`}
                                     >
-                                        Twoja odpowiedź: {userAnswer ? userAnswer.text : "Brak odpowiedzi"}
+                                        <span>Twoja odpowiedź: </span>
+                                        {renderAnswerContent(userAnswer, "Brak odpowiedzi")}
                                     </div>
 
                                     <div className="rounded-2xl bg-green-600 px-4 py-3 font-semibold text-white">
-                                        Poprawna odpowiedź: {correctAnswer?.text}
+                                        <span>Poprawna odpowiedź: </span>
+                                        {renderAnswerContent(correctAnswer, "Brak odpowiedzi")}
                                     </div>
                                 </article>
                             );
@@ -397,7 +455,16 @@ export default function QuizApp() {
             <div className="mx-auto flex max-w-3xl flex-col gap-8 rounded-4xl border border-slate-800 bg-slate-900/80 p-8 shadow-2xl shadow-slate-950/50 sm:p-10">
                 <header className="flex flex-col gap-3">
                     <p className="text-sm uppercase tracking-[0.35em] text-amber-400">{capitalize(selectedSubject)}</p>
-                    <h1 className="text-3xl font-black sm:text-4xl">{currentQuestionData.tresc}</h1>
+
+                    {currentQuestionData.image && (
+                        <img
+                            src={currentQuestionData.image}
+                            alt={currentQuestionData.tresc}
+                            className="max-h-80 w-full rounded-3xl object-contain"
+                        />
+                    )}
+
+                    <h1 className="text-3xl font-black sm:text-3xl">{currentQuestionData.tresc}</h1>
                     <p className="text-sm text-slate-400">
                         Pytanie {currentQuestion + 1} z {totalQuestions}
                     </p>
@@ -415,7 +482,15 @@ export default function QuizApp() {
                                     : "border-transparent bg-slate-800/70 hover:border-slate-600"
                             }`}
                         >
-                            {answer.text}
+                            {answer.image ? (
+                                <img
+                                    src={answer.image}
+                                    alt={answer.alt ?? answer.text ?? `Odpowiedź ${answer.key}`}
+                                    className="max-h-40 w-full object-contain"
+                                />
+                            ) : (
+                                answer.text
+                            )}
                         </button>
                     ))}
                 </main>

@@ -1,0 +1,190 @@
+{
+  "1": {
+    "tresc": "W pewnej firmie pracuje trzech mężczyzn - pan Adrian, pan Marcin i pan Zbigniew. Pan Adrian zarabia o 20% mniej niż pan Marcin, a pan Zbigniew zarabia o 24% więcej niż pan Marcin. O ile procent więcej zarabia pan Zbigniew niż pan Adrian?",
+    "a": "o 44%",
+    "b": "o 47%",
+    "c": "o 51%",
+    "d": "o 55%",
+    "e": "o 59%",
+    "answer": "d"
+  },
+  "2": {
+    "image": "/quiz/matematyka/test1/zad2.svg",
+    "tresc": "",
+    "a": "3/5",
+    "b": "5/3",
+    "c": "3 * 5",
+    "d": "9/25",
+    "e": "25/9",
+    "answer": "b"
+  },
+  "3": {
+    "image": "/quiz/matematyka/test1/zad3.svg",
+    "tresc": "Wartość wyrażenia f(-5) + f(7) * f(0) jest równa:",
+    "a": "-5",
+    "b": "-8",
+    "c": "4",
+    "d": "14",
+    "e": "0",
+    "answer": "b"
+  },
+  "4": {
+    "image": "/quiz/matematyka/test1/zad4.png",
+    "tresc": "Oblicz ile wynosi cosinus kąta skierowanego między dodatnią półosią OX a narysowaną prosta będącą wykresem pewnej funkcji liniowej. Zaznaczone punkty kratowe należą do wykresu tej funkcji oraz mają obie współrzędne calkowite.",
+    "a": {
+      "image": "/quiz/matematyka/test1/zad4_a.png",
+      "alt": "minus pierwiastek z 2 przez 10"
+    },
+    "b": {
+      "image": "/quiz/matematyka/test1/zad4_b.png",
+      "alt": "pierwiastek z 2 przez 10"
+    },
+    "c": {
+      "image": "/quiz/matematyka/test1/zad4_c.png",
+      "alt": "minus pierwiastek z 65 przez 65"
+    },
+    "d": {
+      "image": "/quiz/matematyka/test1/zad4_d.png",
+      "alt": "pierwiastek z 65 przez 65"
+    },
+    "e": "prosta nie przechodzi przez początek układu współrzędnych więc nie da się tego obliczyć",
+    "answer": "c"
+  },
+  "5": {
+    "image": "/quiz/matematyka/test1/zad5.png",
+    "tresc": "Na rysunku przedstawiono fragmenty wykresów funkcji kwadratowej f oraz funkcji liniowej g, której równanie podano na rysunku (z niewiadomym współczynnikiem b). Punkty A, B, C, D to punkty o wszystkich współrzędnych będących liczbami całkowitymi. Punkty A i B to punkty przecięcia wykresu funkcji f z osią OX, a punkt C to punkt przecięcia wykresu funkcji g z osią OX. Punkt D to punkt przecięcia wykresu zarówno funkcji f, jak i funkcji g z osią OY. Maksymalna wartość funkcji wynosi:",
+    "a": "26/8",
+    "b": "27/8",
+    "c": "28/8",
+    "d": "29/8",
+    "e": "30/8",
+    "answer": "b"
+  },
+  "6": {
+    "tresc": "Wyrażenie (x + y)^3 + (x - y)^3 + (x + y)^2 + (x - y)^2 jest równe:",
+    "a": "2 * [x^2 (x + 1) + y^2 (x + 1)]",
+    "b": "2 * [x^2 (3x + 1) + y^2 (x + 1)]",
+    "c": "2 * [x^2 (x + 1) + y^2 (3x + 1)]",
+    "d": "2 * [x^2 (3x + 1) + y^2 (3x + 1)]",
+    "e": "żadne z powyższych",
+    "answer": "c"
+  },
+  "7": {
+    "tresc": "Odległość między miejscowościami A i B wynosi 100 km. W pewnej chwili w czasie z miejscowości A w stronę miejscowości B wyjeżdża pan Andrzej. W tym samym momencie z miejscowości B w stronę miejscowości A wyjeżdża pan Bogdan. Obaj panowie poruszają się po tej samej prostej drodze łączącej obie miejscowości. Pan Andrzej jedzie z prędkością o wartości 50 km/h, a pan Bogdan z prędkością o wartości 100 km/h. Rozpatrywana droga łącząca obie miejscowości przebiega w punkcie odległym o 25 km od miejscowości B przez las, w którym żyją sarny. Podczas podróży pan Andrzej trafił w tym miejscu w sarnę, a jego samochód został zatrzymany i pozostał w miejscu. Po jakim czasie od momentu rozpoczęcia ich podróży panowie Andrzej i Bogdan spotkają się ze sobą w drodze?",
+    "a": "1/2 godziny",
+    "b": "15 minut",
+    "c": "40 minut",
+    "d": "1,5 godziny",
+    "e": "3600 sekund",
+    "answer": "c"
+  },
+  "8": {
+    "tresc": "Stosunek pola koła opisanego na sześciokącie foremnym do pola koła wpisanego w ten sześciokąt jest równy:",
+    "a": "3/4",
+    "b": "2√3 /3",
+    "c": "√3 /2",
+    "d": "4/3",
+    "e": "nie da się tego stwierdzić, ponieważ nie jest podana długość boku sześciokąta.",
+    "answer": "d"
+  },
+  "9": {
+    "image": "/quiz/matematyka/test1/zad9.png",
+    "tresc": "Na rysunku poniżej przedstawiono wykres funkcji f (x). Punkty przecięcia wykresu tej funkcji z osiami układu współrzędnych są liczbami całkowitymi.\nLiczba całkowitych dodatnich rozwiązań nierówności |x^2 - 2x - 8| - f(x) < 5 jest równa:",
+    "a": "1",
+    "b": "2",
+    "c": "3",
+    "d": "4",
+    "e": "5",
+    "answer": "d"
+  },
+  "10": {
+    "image": "/quiz/matematyka/test1/zad10.png",
+    "tresc": "Zależność liczby jąder N pewnego izotopu promieniotwórczego od czasu t wyrażonego w godzinach przedstawiono graficznie na poniższym rysunku. Na rysunku podano również jawnie tę zależność, gdzie N, to początkowa liczba jąder (czyli w chwili t = 0) tego izotopu. Na rysunku zawarto także punkt A, który należy do wykresu omawianej zależności.\nLiczba jąder tego izotopu po upływie 12 godzin od chwili początkowej (czyli dla t = 12) wynosi\n(dopuszczamy również niecałkowite wartości liczby jąder N):",
+    "a": "2^(25/2)",
+    "b": "2^(26/2)",
+    "c": "2^(27/2)",
+    "d": "2^(28/2)",
+    "e": "2^(29/2)",
+    "answer": "a"
+  },
+  "11": {
+    "tresc": "Parametr m dobrano tak, że każda liczba rzeczywista jest rozwiązaniem następującego równania z niewiadomą x: \n(m^3 - 3m^2 - 9m + 27) * x = m^2 + m - 12\nWynika stąd, że m jest równy:",
+    "a": "11",
+    "b": "-4",
+    "c": "0",
+    "d": "2",
+    "e": "3",
+    "answer": "e"
+  },
+  "12": {
+    "image": "/quiz/matematyka/test1/zad12.png",
+    "tresc": "Dany jest układ równań. Ile jest takich trójek liczb (x, y, z), które go spełniają?",
+    "a": "0",
+    "b": "1",
+    "c": "2",
+    "d": "3",
+    "e": "nieskończenie wiele",
+    "answer": "c"
+  },
+  "13": {
+    "image": "/quiz/matematyka/test1/zad13.png",
+    "tresc": "Dany jest trójkąt ABC, w którym |BC| = a. Z wierzchołka B poprowadzono środkową BD do boku AC. Punkt S dzieli odcinek BD na dwie części w taki sposób, że |BS| / |BD| = 3/4. Przez punkty A i S poprowadzono prostą, która przecięła bok BC w punkcie E (patrz rysunek - uwaga: stosunki długości na rysunku niekoniecznie odpowiadają danym). Długość odcinka CE wynosi:",
+    "a": "6/20 a",
+    "b": "7/20 a",
+    "c": "8/20 a",
+    "d": "9/20 a",
+    "e": "10/20 a",
+    "answer": "c"
+  },
+  "14": {
+    "tresc": "Poniższe równanie trygonometryczne posiada klika rozwiązań rzeczywistych zawartych w\nprzedziale [-π,π]：\n(sin 2x)^2 + 2 * sin 2x * sin x - cos 2x - 2 * cos^2 x - 3 * cos x - 3/4 = 0\nRóżnica pomiędzy największym a najmniejszym z tych rozwiązań wynosi:",
+    "a": "(2/3)π",
+    "b": "(5/6)π",
+    "c": "π",
+    "d": "(7/6)π",
+    "e": "(4/3)π",
+    "answer": "e"
+  },
+  "15": {
+    "image": "/quiz/matematyka/test1/zad15.png",
+    "tresc": "Na rysunku poniżej przedstawiono wykres funkcji stałej oraz okrąg O1, - oba zawarte w kartezjańskim układzie współrzędnych. Wartości, w których okrąg przecina się z osią OY są liczbami całkowitymi.\nIstnieje nieskończenie wiele okręgów, które są jednocześnie styczne zewnętrznie do przedstawionego na rysunku okręgu O1, i styczne do przedstawionego na rysunku wykresu funkcji stałej. Krzywa zawierająca środki tych wszystkich okręgów opisywana jest następującym równaniem (gdzie a, b i c to współczynniki liczbowe): f(x) = ax^2 +bx + c.\nWspółczynnik a jest równy:",
+    "a": "-(1/6)",
+    "b": "-(1/8)",
+    "c": "-(1/12)",
+    "d": "-(1/16)",
+    "e": "-(1/24)",
+    "answer": "d"
+  },
+  "16": {
+    "image": "/quiz/matematyka/test1/zad16.png",
+    "tresc": "Na rysunku przedstawiono graficznie wykres wielomianu W (x) czwartego stopnia, który przechodzi przez punkty: A (-3 ; 27), B (-2 ; 0), C (0 ; 24), D (1 ; 27).\nOblicz sumę współczynników liczbowych stojących przy parzystych potęgach zmiennej x w\nwielomianie Q(x), gdzie Q(x) = [W (x)]^2026.",
+    "a": {
+      "image": "/quiz/matematyka/test1/zad16_a.png",
+      "alt": "27 do potęgi 2026 + 11 do potęgi 2026 i to wszystko przez 2"
+    },
+    "b": {
+      "image": "/quiz/matematyka/test1/zad16_b.png",
+      "alt": "3 do potęgi 2026 + 11 do potęgi 2026 i to wszystko przez 2"
+    },
+    "c": {
+      "image": "/quiz/matematyka/test1/zad16_c.png",
+      "alt": "27 do potęgi 2026 + 1 do potęgi 2026 i to wszystko przez 2"
+    },
+    "d": {
+      "image": "/quiz/matematyka/test1/zad16_d.png",
+      "alt": "27 do potęgi 2026 + 11 do potęgi 2026 i to wszystko przez 2026"
+    },
+    "e": "0",
+    "answer": "a"
+  },
+  "17": {
+    "image": "/quiz/matematyka/test1/zad17.png",
+    "tresc": "Boki czworokąta wypukłego wynoszą odpowiednio: a = 7, b = 20, c = 24, d = 15. Oblicz cosinus kąta a zaznaczonego na rysunku pomiędzy przekątnymi czworokąta.",
+    "a": "1/2",
+    "b": "0",
+    "c": "√3 /2",
+    "d": "(√6 - √2) /2",
+    "e": "√2 /2",
+    "answer": "b"
+  }
+}
