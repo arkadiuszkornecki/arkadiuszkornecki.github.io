@@ -83,8 +83,42 @@ while (x > 0) {
 }`,
     notesTitle: "Uwaga",
     notesText:
-      "Język Rava nie jest jeszcze udostępniony publicznie. Materiały na tej stronie przedstawiają aktualny stan składni i plany rozwoju.",
+      "Język Rava nie ma jeszcze wielu rzeczy. Materiały na tej stronie przedstawiają aktualny stan składni i plany rozwoju.",
     comingSoon: "W przygotowaniu",
+    mathfunctions: "Wbudowane funkcje matematyczne",
+    mathfunctionsText:
+      "Rava wspiera podstawowe funkcje matematyczne, takie jak pow(), sqrt(), abs(), round(), roundup(), rounddown().",
+    powdefinition:
+      "Funkcja pow() służy do podnoszenia liczby do potęgi. Funkcja ta przyjmuje dwa argumenty: liczbę i wykładnik potęgi.",
+    powexamplecode: `let liczba: double = 2.0;
+let potega: double = 3.0;
+let wynik: double = pow(liczba, potega);
+print("Wynik: \\(wynik)");`,
+    sqrtdefinition:
+      "Funkcja sqrt() oblicza pierwiastek kwadratowy. Funkcja ta przyjmuje jeden argument: liczbę, dla której ma obliczyć pierwiastek. ",
+    sqrtexamplecode: `let liczba: double = 2.0;
+let wynik: double = sqrt(liczba);
+print("Wynik: \\(wynik)");`,
+    absdefinition:
+      "Funkcja abs() zwraca wartość bezwzględną. Funkcja ta przyjmuje jeden argument: liczbę z której ma wyliczyć wartość bezwzględną. ",
+    absexamplecode: `let liczba: double = -2.52;
+let wynik: double = abs(liczba);
+print("Wynik: \\(wynik)");`,
+    rounddefinition:
+      "Funkcja round() zaokrągla liczbę do podanej liczby miejsc po przecinku. Funkcja ta przyjmuje dwa argumenty: liczbę i wartość która okresla ilość miejsc po przecinku.",
+    roundexamplecode: `let liczba: double = 2.52;
+let wynik: double = round(liczba, 2);
+print("Wynik: \\(wynik)");`,
+    roundupdefinition:
+      "Funkcja roundup() zaokrągla liczbę w górę kiedy ostatnia liczba jest większa od 0. Funkcja ta przyjmuje dwa argumenty: liczbę i wartość która okresla ilość miejsc po przecinku.",
+    roundupexamplecode: `let liczba: double = 2.52;
+let wynik: double = roundup(liczba, 1);
+print("Wynik: \\(wynik)");`,
+    rounddowndefinition:
+      "Funkcja rounddown() zaokrągla liczbę w dół kiedy ostatnia liczba jest większa od 0. Funkcja ta przyjmuje dwa argumenty: liczbę i wartość która okresla ilość miejsc po przecinku.",
+    rounddownexamplecode: `let liczba: double = 2.52;
+let wynik: double = rounddown(liczba, 1);
+print("Wynik: \\(wynik)");`,
   },
   en: {
     heroTitle: "Rava",
@@ -166,8 +200,42 @@ while (x > 0) {
 }`,
     notesTitle: "Note",
     notesText:
-      "Rava is not yet publicly available. The materials here describe the current syntax and future plans.",
+      "Rava still lacks many things.. The materials here describe the current syntax and future plans.",
     comingSoon: "Coming soon",
+    mathfunctions: "Built-in mathematical functions",
+    mathfunctionsText:
+      "Rava supports basic mathematical functions such as pow(), sqrt(), abs(), round(), roundup(), and rounddown().",
+    powdefinition:
+      "The pow() function is used to raise a number to a power. This function takes two arguments: the base and the exponent.",
+    powexamplecode: `let base: double = 2.0;
+let exponent: double = 3.0;
+let result: double = pow(base, exponent);
+print("Result: \\(result)");`,
+    sqrtdefinition:
+      "The sqrt() function calculates the square root. This function takes one argument: the number for which the square root is to be calculated.",
+    sqrtexamplecode: `let number: double = 2.0;
+let result: double = sqrt(number);
+print("Result: \\(result)");`,
+    absdefinition:
+      "The abs() function returns the absolute value. This function takes one argument: the number for which the absolute value is to be calculated.",
+    absexamplecode: `let number: double = -2.52;
+let result: double = abs(number);
+print("Result: \\(result)");`,
+    rounddefinition:
+      "The round() function rounds a number to a specified number of decimal places. This function takes two arguments: the number and a value specifying the number of decimal places.",
+    roundexamplecode: `let number: double = 2.52;
+let result: double = round(number, 2);
+print("Result: \\(result)");`,
+    roundupdefinition:
+      "The roundup() function rounds a number up to a specified number of decimal places. This function takes two arguments: the number and a value specifying the number of decimal places.",
+    roundupexamplecode: `let number: double = 2.52;
+let result: double = roundup(number, 1);
+print("Result: \\(result)");`,
+    rounddowndefinition:
+      "The rounddown() function rounds a number down when the last digit is greater than 0. This function takes two arguments: the number and a value specifying the number of decimal places.",
+    rounddownexamplecode: `let number: double = 2.52;
+let result: double = rounddown(number, 1);
+print("Result: \\(result)");`,
   },
 };
 
@@ -183,6 +251,7 @@ const pages: Array<{ id: string; key: TranslationKey }> = [
   { id: "comments", key: "comments" },
   { id: "fstring", key: "fstring" },
   { id: "functions", key: "functions" },
+  { id: "mathfunctions", key: "mathfunctions" },
 ];
 
 function SectionContainer({ children }: { children: React.ReactNode }) {
@@ -353,6 +422,54 @@ function FStringPage({ lang }: { lang: "pl" | "en" }) {
   );
 }
 
+function MathFunctionsPage({ lang }: { lang: "pl" | "en" }) {
+  const t = translations[lang];
+  return (
+    <SectionContainer>
+      <div className="section-title">{t.mathfunctions}</div>
+      <p>{t.mathfunctionsText}</p>
+      <div className="syntax-grid">
+        <div>
+          <h3>{t.powdefinition}</h3>
+          <pre>
+            <code>{t.powexamplecode}</code>
+          </pre>
+        </div>
+        <div>
+          <h3>{t.sqrtdefinition}</h3>
+          <pre>
+            <code>{t.sqrtexamplecode}</code>
+          </pre>
+        </div>
+        <div>
+          <h3>{t.absdefinition}</h3>
+          <pre>
+            <code>{t.absexamplecode}</code>
+          </pre>
+        </div>
+        <div>
+          <h3>{t.rounddefinition}</h3>
+          <pre>
+            <code>{t.roundexamplecode}</code>
+          </pre>
+        </div>
+        <div>
+          <h3>{t.roundupdefinition}</h3>
+          <pre>
+            <code>{t.roundupexamplecode}</code>
+          </pre>
+        </div>
+        <div>
+          <h3>{t.rounddowndefinition}</h3>
+          <pre>
+            <code>{t.rounddownexamplecode}</code>
+          </pre>
+        </div>
+      </div>
+    </SectionContainer>
+  );
+}
+
 function FunctionsPage({ lang }: { lang: "pl" | "en" }) {
   const t = translations[lang];
   return (
@@ -453,6 +570,10 @@ export default function RavaDocs() {
             <Route path="loops" element={<LoopsPage lang={lang} />} />
             <Route path="comments" element={<CommentsPage lang={lang} />} />
             <Route path="fstring" element={<FStringPage lang={lang} />} />
+            <Route
+              path="mathfunctions"
+              element={<MathFunctionsPage lang={lang} />}
+            />
             <Route path="functions" element={<FunctionsPage lang={lang} />} />
             <Route path="*" element={<OverviewPage lang={lang} />} />
           </Routes>
