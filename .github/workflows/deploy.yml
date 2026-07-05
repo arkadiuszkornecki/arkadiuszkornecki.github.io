@@ -18,16 +18,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Zmiana z 20 na 24, aby pozbyć się ostrzeżeń o deprecjacji
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Install dependencies
         run: npm install
 
       - name: Build
         run: npm run build
+
+      # Krok pomocniczy: sprawdza czy folder dist na pewno istnieje i ma pliki
+      - name: Verify build output
+        run: ls -la ./dist
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
