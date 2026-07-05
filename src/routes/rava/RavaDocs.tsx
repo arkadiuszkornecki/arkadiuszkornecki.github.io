@@ -1,12 +1,5 @@
 import "./styles.css";
-import {
-  Link,
-  NavLink,
-  Route,
-  Routes,
-  useLocation,
-  useSearchParams,
-} from "react-router-dom";
+import { NavLink, Route, Routes, useSearchParams } from "react-router-dom";
 
 const translations = {
   pl: {
@@ -52,25 +45,42 @@ const translations = {
     startTitle: "Start coding",
     startText:
       "Podstawowym poleceniem wejścia/wyjścia w Rava jest funkcja print(). Użyj jej do wyświetlania wartości.",
-    printExample: `print(\"Witaj w Rava\");`,
+    printExample: `print("Witaj w Rava");`,
     loopsTitle: "Pętle",
     loopsText:
       "Rava wspiera pętle for i while. For iteruje po zakresie lub kolekcji, while powtarza kod dopóki warunek jest prawdziwy.",
-    forRangeExample: `for i in 1..10 {\n  print(i)\n}`,
-    forArrayExample: `let tablica = [1, 2, 3, 4, 5]\nfor i in tablica {\n  print(i)\n}`,
-    whileExample: `let x = 5\nwhile (x > 0) {\n  print(x)\n  x = x - 1\n}`,
+    forRangeExample: `for i in 1..10 {\n  print(i);\n}`,
+    forArrayExample: `let tablica = [1, 2, 3, 4, 5];\nfor i in tablica {\n  print(i);\n}`,
+    whileExample: `let x = 5;\nwhile (x > 0) {\n  print(x);\n  x = x - 1;\n}`,
     commentsTitle: "Komentarze",
     commentsText:
       "W Rava można używać komentarzy jedno- i wielowierszowych do opisywania kodu lub tymczasowego wyłączania fragmentów.",
-    singleCommentExample: `// To jest komentarz jednoliniowy\nprint(\"Witaj w Rava\");`,
-    blockCommentExample: `/*\n  To jest komentarz wielowierszowy.\n  Możesz opisać tutaj dłuższy fragment.\n*/\nprint(\"Rava\");`,
+    singleCommentExample: `// To jest komentarz jednoliniowy
+print("Witaj w Rava");`,
+    blockCommentExample: `/*
+  To jest komentarz wielowierszowy.
+  Możesz opisać tutaj dłuższy fragment.
+*/
+print("Rava");`,
     fstringTitle: "F-string",
     fstringText:
-      "Rava obsługuje interpolację tekstu w stringach za pomocą składni \\(\).",
-    fstringExample: `var lang: string = \"Rava\";\nprint(\"Czesc, jestem \\(lang) nowy język programowania\");`,
+      "Rava obsługuje interpolację tekstu w stringach za pomocą składni \\().",
+    fstringExample: `var lang: string = "Rava";
+print("Czesc, jestem \\(lang) nowy język programowania");`,
     examplesTitle: "Przykłady",
     examplesText: "Poniżej przykład użycia pętli i komentarzy w Rava.",
-    examplesCode: `let tablica = [1, 2, 3, 4, 5]\n\nfor i in tablica {\n  // Wypisz elementy tablicy\n  print(i)\n}\n\nlet x = 3\nwhile (x > 0) {\n  print(\"Zostało: \" + x)\n  x = x - 1\n}`,
+    examplesCode: `let tablica = [1, 2, 3, 4, 5];
+
+for i in tablica {
+  // Wypisz elementy tablicy
+  print(i);
+}
+
+let x = 3;
+while (x > 0) {
+  print("Zostało: " + x);
+  x = x - 1;
+}`,
     notesTitle: "Uwaga",
     notesText:
       "Język Rava nie jest jeszcze udostępniony publicznie. Materiały na tej stronie przedstawiają aktualny stan składni i plany rozwoju.",
@@ -112,31 +122,48 @@ const translations = {
     arrayTitle: "Arrays",
     arrayText:
       "Arrays are defined with let and specify element types in square brackets.",
-    arrayExample: `let tab: [string] = [];`,
+    arrayExample: `let tab: [string] = ["Zero", "One", "Two", "Three"];`,
     arrayExample2: `let tab: [int] = [0, 1, 2, 3];`,
     arrayExampleDescription:
       "Arrays let you group same-typed values and iterate over them using loops or access elements by index.",
     startTitle: "Start coding",
     startText:
       "The primary I/O command in Rava is print(). Use it to display values.",
-    printExample: `print(\"Hello Rava\");`,
+    printExample: `print("Hello Rava");`,
     loopsTitle: "Loops",
     loopsText:
       "Rava supports for and while loops. For iterates over ranges or collections, while repeats code while a condition is true.",
-    forRangeExample: `for i in 1..10 {\n  print(i)\n}`,
-    forArrayExample: `let array = [1, 2, 3, 4, 5]\nfor i in array {\n  print(i)\n}`,
-    whileExample: `let x = 5\nwhile (x > 0) {\n  print(x)\n  x = x - 1\n}`,
+    forRangeExample: `for i in 1..10 {\n  print(i);\n}`,
+    forArrayExample: `let array = [1, 2, 3, 4, 5];\nfor i in array {\n  print(i);\n}`,
+    whileExample: `let x = 5;\nwhile (x > 0) {\n  print(x);\n  x = x - 1;\n}`,
     commentsTitle: "Comments",
     commentsText:
       "In Rava you can use single-line and block comments to describe code or temporarily disable sections.",
-    singleCommentExample: `// This is a single-line comment\nprint(\"Hello Rava\");`,
-    blockCommentExample: `/*\n  This is a block comment.\n  You can describe a longer section here.\n*/\nprint(\"Rava\");`,
+    singleCommentExample: `// This is a single-line comment
+print("Hello Rava");`,
+    blockCommentExample: `/*
+  This is a block comment.
+  You can describe a longer section here.
+*/
+print("Rava");`,
     fstringTitle: "F-string",
-    fstringText: "Rava supports string interpolation using the \\(\) syntax.",
-    fstringExample: `var lang: string = \"Rava\";\nprint(\"Hello, I am \\(lang) new programming language\");`,
+    fstringText: "Rava supports string interpolation using the \\() syntax.",
+    fstringExample: `var lang: string = "Rava";
+print("Hello, I am \\(lang) new programming language");`,
     examplesTitle: "Examples",
     examplesText: "Below is an example showing loops and comments in Rava.",
-    examplesCode: `let array = [1, 2, 3, 4, 5]\n\nfor i in array {\n  // Print each element\n  print(i)\n}\n\nlet x = 3\nwhile (x > 0) {\n  print(\"Remaining: \" + x)\n  x = x - 1\n}`,
+    examplesCode: `let array = [1, 2, 3, 4, 5];
+
+for i in array {
+  // Print each element
+  print(i);
+}
+
+let x = 3;
+while (x > 0) {
+  print("Remaining: " + x);
+  x = x - 1;
+}`,
     notesTitle: "Note",
     notesText:
       "Rava is not yet publicly available. The materials here describe the current syntax and future plans.",
@@ -144,7 +171,9 @@ const translations = {
   },
 };
 
-const pages = [
+type TranslationKey = keyof (typeof translations)["pl"];
+
+const pages: Array<{ id: string; key: TranslationKey }> = [
   { id: "overview", key: "overview" },
   { id: "install", key: "install" },
   { id: "start", key: "start" },
@@ -336,7 +365,6 @@ function FunctionsPage({ lang }: { lang: "pl" | "en" }) {
 
 export default function RavaDocs() {
   const [searchParams, setSearchParams] = useSearchParams();
-  const location = useLocation();
   const lang = searchParams.get("lang") === "en" ? "en" : "pl";
 
   const changeLanguage = (nextLang: "pl" | "en") => {
